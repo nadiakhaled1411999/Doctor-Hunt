@@ -10,7 +10,7 @@ import '../../../../core/theming/app_colors.dart';
 import '../../../../core/theming/app_styles.dart';
 import '../../../../core/widgets/app_text_button.dart';
 
-import '../../../home/presentation/screens/onboarding_screen/color.dart';
+
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -98,13 +98,13 @@ class SignUpScreen extends StatelessWidget {
                       children: [
                         Text(
                           "Have an account?",
-                          style: TextStyle(color: primaryColor),
+                          style: TextStyle(color: AppColors.primaryColor),
                         ),
                         TextButton(
                           onPressed: () {},
                           child: Text(
                             'Log in',
-                            style: TextStyle(color: primaryColor),
+                            style: TextStyle(color:AppColors. primaryColor),
                           ),
                         ),
                       ],

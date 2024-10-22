@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:untitled/features/home/presentation/screens/onboarding_screen/onboarding.dart';
+import 'package:untitled/features/onboarding/presentation/screens/onboarding.dart';
+ 
 
 void main()async {
   WidgetsFlutterBinding.ensureInitialized();

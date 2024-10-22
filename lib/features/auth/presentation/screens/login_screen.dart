@@ -3,13 +3,14 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:untitled/core/constants/app_assets.dart';
 import 'package:untitled/core/heplers/spacing.dart';
+import 'package:untitled/core/theming/app_colors.dart';
 
 import 'package:untitled/core/theming/app_styles.dart';
 import 'package:untitled/core/widgets/app_text_button.dart';
 import 'package:untitled/features/auth/presentation/widgest/login_text_form_field.dart';
 import 'package:untitled/features/auth/presentation/widgest/sochial_button.dart';
 
-import 'package:untitled/features/home/presentation/screens/onboarding_screen/color.dart';
+
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -72,7 +73,7 @@ class LoginScreen extends StatelessWidget {
                       onPressed: () {},
                       child: Text(
                         'Forgot password',
-                        style: TextStyle(color: primaryColor),
+                        style: TextStyle(color:AppColors. primaryColor),
                       ),
                     ),
                     verticalSpace(45),
@@ -81,13 +82,13 @@ class LoginScreen extends StatelessWidget {
                       children: [
                         Text(
                           "Don't have an account?",
-                          style: TextStyle(color: primaryColor),
+                          style: TextStyle(color:  AppColors.primaryColor),
                         ),
                         TextButton(
                           onPressed: () {},
                           child: Text(
                             'Join us',
-                            style: TextStyle(color: primaryColor),
+                            style: TextStyle(color:AppColors. primaryColor),
                           ),
                         ),
                       ],

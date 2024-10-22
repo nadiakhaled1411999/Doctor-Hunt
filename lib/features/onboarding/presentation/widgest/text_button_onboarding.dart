@@ -3,11 +3,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:untitled/core/heplers/spacing.dart';
+import 'package:untitled/features/onboarding/logic/onboarding_data.dart';
 
 import '../../../../core/theming/app_colors.dart';
 import '../../../../core/theming/app_styles.dart';
 import '../../../auth/presentation/screens/login_screen.dart';
-import '../../../home/presentation/screens/onboarding_screen/onboarding_data.dart';
+ 
 
 class TextButtonOnboarding extends StatefulWidget {
   const TextButtonOnboarding({super.key});
