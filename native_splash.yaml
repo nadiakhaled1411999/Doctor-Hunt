@@ -1,7 +1,7 @@
 flutter_native_splash:
 
   color: "#ffffff"
-  #background_image: "assets/background.png"
+  background_image: "assets/images/bg.png"
 
   # Optional parameters are listed below.  To enable a parameter, uncomment the line by removing
   # the leading # character.
@@ -27,8 +27,8 @@ flutter_native_splash:
   # parameters from above. If the image_dark parameter is specified, color_dark or
   # background_image_dark must be specified.  color_dark and background_image_dark cannot both be
   # set.
-  #color_dark: "#042a49"
-  #background_image_dark: "assets/dark-background.png"
+  #color_dark: "#ffffff"
+  #background_image_dark: "assets/images/bg.png"
   #image_dark: assets/splash-invert.png
   #branding_dark: assets/dart_dark.png
 
