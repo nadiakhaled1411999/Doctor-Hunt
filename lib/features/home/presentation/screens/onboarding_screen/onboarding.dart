@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:untitled/core/heplers/spacing.dart';
 
 import '../auth/login_screen.dart';
 import 'color.dart';
@@ -24,7 +25,9 @@ class _OnboardingPageState extends State<OnboardingPage> {
         children: [
           Positioned.fill(
             child: Image.asset(
-              'assets/images/bg.png',
+              currentIndex == 1
+                  ? 'assets/images/backOnBoarding2.png'  // الخلفية للشاشة الثانية
+                  : 'assets/images/backOnBoarding.png',  // الخلفية للشاشات الأخرى
               fit: BoxFit.cover,
             ),
           ),
@@ -41,7 +44,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   itemCount: controller.items.length,
                   itemBuilder: (context, index) {
                     return Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      padding:  EdgeInsets.symmetric(horizontal: 20.w),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -57,14 +60,14 @@ class _OnboardingPageState extends State<OnboardingPage> {
                               ),
                             ),
                           ),
-                          SizedBox(height: 55.h),
+                         verticalSpace( 55),
                           Text(
                             controller.items[currentIndex].title,
                             style: TextStyle(
                               fontSize: 28.sp,
                               color: titleColor,
                               fontWeight: FontWeight.bold,
-                              fontFamily: 'font',
+                              fontFamily: 'Rubik',
                             ),
                             textAlign: TextAlign.center,
                           ),
@@ -77,7 +80,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                                 color: descriptionColor,
                                 fontSize: 14.sp,
                                 fontWeight: FontWeight.w400,
-                                fontFamily: 'font',
+                                fontFamily: 'Rubik',
                               ),
                               textAlign: TextAlign.center,
                             ),
@@ -121,7 +124,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 18.sp,
-                      fontFamily: 'font',
+                      fontFamily: 'Rubik',
                     ),
                   ),
                 ),
@@ -137,15 +140,18 @@ class _OnboardingPageState extends State<OnboardingPage> {
                     );
                   });
                 },
-                child: Text(
+                child: currentIndex == controller.items.length - 1
+                    ? SizedBox.shrink() // إخفاء زر "Skip" في الصفحة الأخيرة
+                    : Text(
                   "Skip",
                   style: TextStyle(
                     color: descriptionColor,
                     fontSize: 14.sp,
-                    fontFamily: 'font',
+                    fontFamily: 'Rubik',
                   ),
                 ),
               ),
+
             ],
           ),
         ],

@@ -1,19 +1,27 @@
-// ignore_for_file: prefer_const_constructors, sort_child_properties_last, sized_box_for_whitespace, use_key_in_widget_constructors
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'package:untitled/core/constants/app_assets.dart';
+import 'package:untitled/core/heplers/spacing.dart';
+
+import 'package:untitled/core/theming/app_styles.dart';
+import 'package:untitled/core/widgets/app_text_button.dart';
+import 'package:untitled/features/auth/presentation/widgest/login_text_form_field.dart';
+import 'package:untitled/features/auth/presentation/widgest/sochial_button.dart';
+
 import 'package:untitled/features/home/presentation/screens/onboarding_screen/color.dart';
 
 class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: [
-          // Background Image
           Positioned.fill(
             child: Image.asset(
-              'assets/images/bg.png',
+              AppAssets.bglogin,
               fit: BoxFit.cover,
             ),
           ),
@@ -24,203 +32,64 @@ class LoginScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    // Welcome Text
                     Text(
                       'Welcome back',
-                      style: TextStyle(
-                        fontSize: 24.sp,
-                        fontFamily: 'Rubik',
-                        fontWeight: FontWeight.bold,
-                      ),
+                      style: AppStyles.getTitleStyle(),
                     ),
-                    SizedBox(height: 10.h),
+                    verticalSpace(10),
                     Text(
                       'You can search course, apply course and find\nscholarship for abroad studies',
                       textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: descriptionColor, // استخدام اللون الرمادي للتوضيح
-                        fontSize: 14,
-                        fontFamily: 'Rubik',
-                      ),
+                      style: AppStyles.getDescriptionStyle(),
                     ),
-                    SizedBox(height: 50),
-
-                    // Social login buttons
-                    // Social login buttons
+                    verticalSpace(40),
                     Padding(
-                      padding: const EdgeInsets.only(top: 50.0), // تعديل التباعد العلوي
+                      padding: EdgeInsets.only(top: 40.h),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          // Google Button
-                          Container(
-                            width: 140.w,
-                            height: 45.h,// تحديد عرض الزر
-                            child: ElevatedButton.icon(
-                              onPressed: () {},
-                              icon: Image.asset('assets/icons/google.png', width: 24), // أيقونة جوجل
-                              label: Text("Google"),
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.white, // خلفية بيضاء
-                                foregroundColor: descriptionColor, // لون النص
-                                elevation: 2, // بدون ظل
-                                shadowColor: Colors.white,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(12), // تحديد الزوايا
-                                  side: BorderSide(color: Colors.white), // تحديد اللون الخارجي ليكون رمادي فاتح
-
-                                ),
-                                padding: EdgeInsets.symmetric(vertical: 12), // تعديل الحواف الداخلية
-                              ),
-                            ),
-                          ),
-                          SizedBox(width: 10), // مسافة بين الأزرار
-                          // Facebook Button
-                          Container(
-                            width: 140.w,
-                            height: 45.h,// تحديد عرض الزر
-                            child: ElevatedButton.icon(
-                              onPressed: () {},
-                              icon: Image.asset('assets/icons/facebook.png', width: 24), // أيقونة فيسبوك
-                              label: Text("Facebook"),
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.white, // خلفية بيضاء
-                                foregroundColor: descriptionColor, // لون النص
-                                elevation:2, // بدون ظل
-                                shadowColor: Colors.white,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(12), // تحديد الزوايا
-                                  side: BorderSide(color: Colors.white), // تحديد اللون الخارجي ليكون رمادي فاتح
-
-                                ),
-                                padding: EdgeInsets.symmetric(vertical: 12), // تعديل الحواف الداخلية
-                              ),
-                            ),
-                          ),
+                          SochialButton(
+                              textName: 'Google', iconPath: AppAssets.Google),
+                          horizontalSpace(12),
+                          SochialButton(
+                            textName: 'facebook',
+                            iconPath: AppAssets.facebook,
+                          )
                         ],
                       ),
                     ),
-
-
-                    SizedBox(height: 30),
-
-                    // Email TextField
-                    SizedBox(
-                      width: 400, // عرض أصغر
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          labelText: 'Email',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10), // زوايا دائرية
-                            borderSide: BorderSide(
-                              color: Colors.grey, // لون الحدود
-                              width: 1.0, // سمك الحدود
-                            ),
-                          ),
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10), // زوايا دائرية عند الوضع العادي
-                            borderSide: BorderSide(
-                              color: Colors.grey, // لون الحدود
-                              width: 1.0, // سمك الحدود
-                            ),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10), // زوايا دائرية عند التركيز
-                            borderSide: BorderSide(
-                              color: Colors.grey, // لون الحدود
-                              width: 1.0, // سمك الحدود
-                            ),
-                          ),
-                          suffixIcon: Icon(Icons.check_circle_outline),
-                          filled: true, // لتفعيل تعبئة الخلفية
-                          fillColor: Colors.white, // لون الخلفية البيضاء
-                        ),
-                      ),
+                    verticalSpace(40),
+                    LoginTextFormField(),
+                    verticalSpace(30),
+                    AppTextButton(
+                      buttonText: 'login',
+                      textStyle: AppStyles.getTextButtonStyle(),
+                      buttonWidth: 290,
+                      buttonHeight: 54,
+                      onPressed: () {},
                     ),
-                    SizedBox(height: 20),
-                    SizedBox(
-                      width: 400, // عرض أصغر
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          labelText: 'Password',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10), // زوايا دائرية
-                            borderSide: BorderSide(
-                              color: Colors.grey, // لون الحدود
-                              width: 1.0, // سمك الحدود
-                            ),
-                          ),
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10), // زوايا دائرية عند الوضع العادي
-                            borderSide: BorderSide(
-                              color: Colors.grey, // لون الحدود
-                              width: 1.0, // سمك الحدود
-                            ),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10), // زوايا دائرية عند التركيز
-                            borderSide: BorderSide(
-                              color: Colors.grey, // لون الحدود
-                              width: 1.0, // سمك الحدود
-                            ),
-                          ),
-                          suffixIcon: Icon(Icons.visibility_off),
-                          filled: true, // لتفعيل تعبئة الخلفية
-                          fillColor: Colors.white, // لون الخلفية البيضاء
-                        ),
-                      ),
-                    ),
-
-                    // Password TextField
-
-                    SizedBox(height: 20),
-
-                    // Login Button (modified)
-                    Container(
-                      margin: const EdgeInsets.symmetric(vertical: 20),
-                      width: 295.w,
-                      height: 54.h,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.r),
-                        color: primaryColor,
-                      ),
-
-                        child: Center(
-                          child: Text(
-
-                                 "login",
-
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18.sp,
-                              fontFamily: 'Rubik',
-                            ),
-                          ),
-                        ),
-                      ),
-
-
-
-                    // Forgot password link
                     TextButton(
                       onPressed: () {},
                       child: Text(
                         'Forgot password',
-                        style: TextStyle(color:primaryColor),
+                        style: TextStyle(color: primaryColor),
                       ),
                     ),
-
-                    SizedBox(height: 45.h,) ,
+                    verticalSpace(45),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text("Don't have an account?",style:TextStyle(color: primaryColor) ,),
+                        Text(
+                          "Don't have an account?",
+                          style: TextStyle(color: primaryColor),
+                        ),
                         TextButton(
                           onPressed: () {},
-                          child: Text('Join us',style:TextStyle(color: primaryColor),),
+                          child: Text(
+                            'Join us',
+                            style: TextStyle(color: primaryColor),
+                          ),
                         ),
-
-
                       ],
                     ),
                   ],

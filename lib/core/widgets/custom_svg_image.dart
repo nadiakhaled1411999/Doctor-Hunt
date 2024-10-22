@@ -1,5 +1,8 @@
 
 
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter_svg/svg.dart';
 
 class CustomSVGImage extends StatelessWidget {
   const CustomSVGImage({
@@ -25,9 +28,9 @@ class CustomSVGImage extends StatelessWidget {
     if (asset.contains("http")) {
       return SvgPicture.network(
         asset,
-        fit: BoxFit.fill,
+       // fit: BoxFit.fill,
         matchTextDirection: matchTextDirection,
-        color: color,
+
       );
     }
     return GestureDetector(
@@ -36,8 +39,8 @@ class CustomSVGImage extends StatelessWidget {
         width: width?.w ?? 0,
         height: height?.h ?? 0,
         asset,
-        color: color,
-        fit: fit,
+
+      //  fit: fit,
         matchTextDirection: matchTextDirection,
       ),
     );

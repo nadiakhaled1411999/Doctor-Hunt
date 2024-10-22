@@ -1,6 +1,13 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 
-import '../utils/app_styels.dart';
+
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../theming/app_colors.dart';
+import '../theming/app_styles.dart';
 
 class AppTextFormField extends StatelessWidget {
   final EdgeInsetsGeometry? contentPadding;
@@ -80,21 +87,21 @@ class AppTextFormField extends StatelessWidget {
             //OutlineInputBorder with a specific color and width.
             OutlineInputBorder(
               borderRadius: BorderRadius.circular(
-                radius.r,
+                radius!=null?radius!.r:0.r,
               ),
               borderSide: BorderSide(
                 color: focusdBorderColor ?? AppColors.primaryColor,
-                width: 1.3.w,
+                width: 1.w,
               ),
             ),
         enabledBorder: OutlineInputBorder(
           // enabledBorder: Defines the border when the text field is not focused,
           // using a lighter gray color.
           borderRadius: BorderRadius.circular(
-            radius.r,
+            radius!=null?radius!.r:0.r,
           ),
           borderSide: BorderSide(
-            color: enabledBorderSideColor ?? AppColors.white,
+            color: enabledBorderSideColor ?? Colors.grey,
             width: 1.w,
           ),
         ),
@@ -103,7 +110,7 @@ class AppTextFormField extends StatelessWidget {
         hintText: hintText,
         // hintText: Displays the provided hint text.
         suffixIcon: suffixIcon,
-        suffixIconColor: AppColors.white,
+        suffixIconColor: AppColors.descriptionColor,
         prefixIcon: prefixIcon,
         prefixIconColor: AppColors.white,
         // suffixIcon: Displays the provided suffix icon, if any.
@@ -114,7 +121,7 @@ class AppTextFormField extends StatelessWidget {
         // filled: true: Ensures the text field is filled with the background color.
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(
-            radius.r,
+            radius!=null?radius!.r:0.r,
           ),
           borderSide: BorderSide(
             color: AppColors.red,
@@ -124,7 +131,7 @@ class AppTextFormField extends StatelessWidget {
         // errorBorder set the border styles when there is a validation error.
         focusedErrorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(
-            radius.r,
+            radius!=null?radius!.r:0.r,
           ),
           borderSide: BorderSide(
             color: AppColors.red,
