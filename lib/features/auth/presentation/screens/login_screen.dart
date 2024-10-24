@@ -7,6 +7,7 @@ import 'package:untitled/core/theming/app_colors.dart';
 
 import 'package:untitled/core/theming/app_styles.dart';
 import 'package:untitled/core/widgets/app_text_button.dart';
+import 'package:untitled/features/auth/presentation/screens/sign_up_screen.dart';
 import 'package:untitled/features/auth/presentation/widgest/login_text_form_field.dart';
 import 'package:untitled/features/auth/presentation/widgest/sochial_button.dart';
 
@@ -85,7 +86,12 @@ class LoginScreen extends StatelessWidget {
                           style: TextStyle(color:  AppColors.primaryColor),
                         ),
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                builder: (context) => SignUpScreen()),);
+                          },
                           child: Text(
                             'Join us',
                             style: TextStyle(color:AppColors. primaryColor),

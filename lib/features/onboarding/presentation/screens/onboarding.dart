@@ -4,8 +4,9 @@ import 'package:untitled/core/constants/app_assets.dart';
 import 'package:untitled/core/heplers/spacing.dart';
 import 'package:untitled/core/theming/app_colors.dart';
 import 'package:untitled/core/theming/app_styles.dart';
-import 'package:untitled/features/onboarding/presentation/widgest/text_button_onboarding.dart';
 
+
+import '../../../auth/presentation/screens/login_screen.dart';
 import '../../logic/onboarding_data.dart';
 
 class OnboardingPage extends StatefulWidget {
@@ -83,7 +84,61 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   },
                 ),
               ),
-              TextButtonOnboarding(),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 20.h),
+                width: 295.w,
+                height: 54.h,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10.r),
+                  color: AppColors.primaryColor,
+                ),
+                child: TextButton(
+                  onPressed: () {
+                    if (currentIndex == controller.items.length - 1) {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => LoginScreen(),
+                        ),
+                      );
+                    } else {
+                      pageController.animateToPage(
+                        currentIndex + 1,
+                        duration: const Duration(milliseconds: 300),
+                        curve: Curves.easeInOut,
+                      );
+                    }
+                  },
+                  child: Text(
+                    currentIndex == controller.items.length - 1
+                        ? "Get Started"
+                        : "Get Started",
+                    style: TextStyle(
+                      color: AppColors.white,
+                      fontSize: 18.sp,
+                      fontFamily: 'Rubik',
+                    ),
+                  ),
+                ),
+              ),
+              verticalSpace(10),
+              TextButton(
+                onPressed: () {
+                  setState(() {
+                    pageController.animateToPage(
+                      controller.items.length - 1,
+                      duration: const Duration(milliseconds: 300),
+                      curve: Curves.easeInOut,
+                    );
+                  });
+                },
+                child: currentIndex == controller.items.length - 1
+                    ? SizedBox.shrink()
+                    : Text(
+                        "Skip",
+                        style: AppStyles.getDescriptionStyle(),
+                      ),
+              ),
             ],
           ),
         ],
