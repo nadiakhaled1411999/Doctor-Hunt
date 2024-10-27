@@ -38,6 +38,7 @@ dependencies:
   flutter_native_splash: ^2.4.1
   flutter_screenutil: ^5.9.3
   flutter_svg: ^2.0.10+1
+  gradients: ^0.1.1+2
 
 dev_dependencies:
   flutter_test:

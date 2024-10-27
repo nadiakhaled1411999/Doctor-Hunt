@@ -1,14 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:untitled/features/auth/presentation/widgest/signup_text_form_filed.dart';
-
-import 'package:untitled/features/auth/presentation/widgest/sochial_button.dart';
-
-import '../../../../core/constants/app_assets.dart';
-import '../../../../core/heplers/spacing.dart';
-import '../../../../core/theming/app_colors.dart';
-import '../../../../core/theming/app_styles.dart';
-import '../../../../core/widgets/app_text_button.dart';
+import 'package:untitled/core/routing/route_export_features/export_auth/export_signup.dart';
 
 
 
@@ -102,7 +92,9 @@ class SignUpScreen extends StatelessWidget {
                             style: TextStyle(color: AppColors.primaryColor),
                           ),
                           TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.pushNamed(context, Routes.LoginScreen);
+                            },
                             child: Text(
                               'Log in',
                               style: TextStyle(color:AppColors. primaryColor),

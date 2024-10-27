@@ -11,7 +11,20 @@ class AppColors {
     static const  titleColor = Color(0xff333333);
     static const descriptionColor = Color(0xff677294);
   static const white= Color(0xffffffff);
+  static const black=Color( 0xff333333);
+
   static const red=Color( 0xffFF0000);
+  static const gradientColor1=Color(0xff0EBE7E );
+  static const gradientColor2=Color(0xff07D9AD);
+  static const subtitelColor=Color( 0xffFAFAFA);
+  static const colorCardIcon1=Color( 0xff5e5ef8);
+  static const colorCardIcon2=Color(0xff1ed3a4);
+  static const colorCardIcon3=Color( 0xffffc56b);
+  static const colorCardIcon4=Color(0xffff6a63);
+  static const amber=Color(0xffF6D060);
+
+
+
 
 
 

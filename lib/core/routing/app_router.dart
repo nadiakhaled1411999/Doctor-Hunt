@@ -1,14 +1,19 @@
 
 
-import 'package:flutter/material.dart';
-
-class DocSpotRouter {
+import 'route_export.dart';
+class DocdtorHuntRouter {
   Route? generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      // case Routes.onBoardingScreen:
-      //   return MaterialPageRoute(
-      //     builder: (context) => const OnBoardingScreen(),
-      //   );
+      case Routes.OnboardingPage:
+        return MaterialPageRoute(
+           builder: (context) => const OnboardingPage(),
+         );
+      case Routes.LoginScreen:
+        return MaterialPageRoute(builder: (context) => const LoginScreen());
+      case Routes.SignUpScreen:
+        return MaterialPageRoute(builder: (cotext) => const SignUpScreen());
+      case Routes.HomeScreen:
+        return MaterialPageRoute(builder:  (context) => HomeScreen());
  
       default:
         return null;

@@ -1,13 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:untitled/core/constants/app_assets.dart';
-import 'package:untitled/core/heplers/spacing.dart';
-import 'package:untitled/core/theming/app_colors.dart';
-import 'package:untitled/core/theming/app_styles.dart';
+import 'package:untitled/core/routing/route_export_features/export_onboarding/route_export_onboarding.dart';
 
 
-import '../../../auth/presentation/screens/login_screen.dart';
-import '../../logic/onboarding_data.dart';
+
+
 
 class OnboardingPage extends StatefulWidget {
   const OnboardingPage({super.key});
@@ -95,12 +90,9 @@ class _OnboardingPageState extends State<OnboardingPage> {
                 child: TextButton(
                   onPressed: () {
                     if (currentIndex == controller.items.length - 1) {
-                      Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => LoginScreen(),
-                        ),
-                      );
+                      Navigator.pushNamed(context, Routes.LoginScreen);
+
+
                     } else {
                       pageController.animateToPage(
                         currentIndex + 1,

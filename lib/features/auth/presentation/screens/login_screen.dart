@@ -1,15 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:untitled/core/routing/route_export_features/export_auth/export_login.dart';
 
-import 'package:untitled/core/constants/app_assets.dart';
-import 'package:untitled/core/heplers/spacing.dart';
-import 'package:untitled/core/theming/app_colors.dart';
-
-import 'package:untitled/core/theming/app_styles.dart';
-import 'package:untitled/core/widgets/app_text_button.dart';
-import 'package:untitled/features/auth/presentation/screens/sign_up_screen.dart';
-import 'package:untitled/features/auth/presentation/widgest/login_text_form_field.dart';
-import 'package:untitled/features/auth/presentation/widgest/sochial_button.dart';
 
 
 
@@ -68,7 +58,9 @@ class LoginScreen extends StatelessWidget {
                       textStyle: AppStyles.getTextButtonStyle(),
                       buttonWidth: 290,
                       buttonHeight: 54,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, Routes.HomeScreen);
+                      },
                     ),
                     TextButton(
                       onPressed: () {},
@@ -87,10 +79,8 @@ class LoginScreen extends StatelessWidget {
                         ),
                         TextButton(
                           onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                builder: (context) => SignUpScreen()),);
+                            Navigator.pushNamed(context, Routes.SignUpScreen);
+
                           },
                           child: Text(
                             'Join us',
