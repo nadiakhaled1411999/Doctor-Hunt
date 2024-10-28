@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:untitled/core/theming/app_colors.dart';
 
+import 'font_family.dart';
+
 class AppStyles {
   AppStyles._();
 
@@ -11,10 +13,10 @@ class AppStyles {
   factory AppStyles() => _instance;
 
   static TextStyle getRegularStyle({
-    double fontSize = 14,
-    Color? color = AppColors.primaryColor,
-    FontWeight? fontWeight = FontWeight.w400,
-    // String fontFamily = FontFamilies.interFamily,
+    double fontSize = 15,
+    Color? color = AppColors.descriptionColor,
+    FontWeight? fontWeight = FontWeight.w600,
+    String fontFamily = FontFamilies.interFamily,
     double? letterSpacing,
     FontStyle? fontStyle,
     double? height,
@@ -28,7 +30,7 @@ class AppStyles {
       TextStyle(
         fontSize: fontSize,
         fontWeight: fontWeight,
-        // fontFamily: fontFamily,
+         fontFamily: fontFamily,
         color: color,
         letterSpacing: letterSpacing,
         fontStyle: fontStyle,
@@ -42,10 +44,10 @@ class AppStyles {
       );
 
   static TextStyle getBoldStyle({
-    double fontSize = 16,
-    Color? color = AppColors.primaryColor,
-    FontWeight? fontWeight = FontWeight.w700,
-    // String fontFamily = FontFamilies.interFamily,
+    double fontSize = 29,
+    Color? color = AppColors.titleColor,
+    FontWeight? fontWeight = FontWeight.bold,
+     String fontFamily = FontFamilies.interFamily,
     double? letterSpacing,
     FontStyle? fontStyle,
     double? height,
@@ -59,7 +61,7 @@ class AppStyles {
       TextStyle(
         fontSize: fontSize,
         fontWeight: fontWeight,
-        // fontFamily: fontFamily,
+        fontFamily: fontFamily,
         color: color,
         letterSpacing: letterSpacing,
         fontStyle: fontStyle,
@@ -76,7 +78,7 @@ class AppStyles {
     double fontSize = 12,
     Color? color = AppColors.primaryColor,
     FontWeight? fontWeight = FontWeight.w600,
-    // String fontFamily = FontFamilies.interFamily,
+    String fontFamily = FontFamilies.interFamily,
     double? letterSpacing,
     FontStyle? fontStyle,
     double? height,
@@ -90,7 +92,7 @@ class AppStyles {
       TextStyle(
         fontSize: fontSize.sp,
         fontWeight: fontWeight,
-        // fontFamily: fontFamily,
+        fontFamily: fontFamily,
         color: color,
         letterSpacing: letterSpacing,
         fontStyle: fontStyle,
@@ -103,10 +105,10 @@ class AppStyles {
         backgroundColor: backgroundColor,
       );
   static TextStyle getMediumStyle({
-    double fontSize = 13,
-    Color? color = AppColors.primaryColor,
-    FontWeight? fontWeight = FontWeight.w500,
-    // String fontFamily = FontFamilies.interFamily,
+    double fontSize = 18,
+    Color? color = AppColors.white,
+    FontWeight? fontWeight = FontWeight.w600,
+    String fontFamily = FontFamilies.interFamily,
     double? letterSpacing,
     FontStyle? fontStyle,
     double? height,
@@ -120,7 +122,7 @@ class AppStyles {
       TextStyle(
         fontSize: fontSize,
         fontWeight: fontWeight,
-        // fontFamily: fontFamily,
+          fontFamily: fontFamily,
         color: color,
         letterSpacing: letterSpacing,
         fontStyle: fontStyle,

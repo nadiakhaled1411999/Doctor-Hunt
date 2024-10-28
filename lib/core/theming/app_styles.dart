@@ -23,15 +23,14 @@ static TextStyle getTitleStyle(){
 }
 static TextStyle getDescriptionStyle(){
  return TextStyle(
-    color: AppColors.descriptionColor, // استخدام اللون الرمادي للتوضيح
-    fontSize: 14.sp,
+    color: AppColors.descriptionColor, 
     fontWeight: FontWeight.w600,
     fontFamily: 'Rubik',
   );
 }
 static TextStyle getTextButtonStyle(){
   return TextStyle(
-    color: AppColors.white, // استخدام اللون الرمادي للتوضيح
+    color: AppColors.white,  
     fontSize: 18.sp,
     fontWeight: FontWeight.w600,
     fontFamily: 'Rubik',

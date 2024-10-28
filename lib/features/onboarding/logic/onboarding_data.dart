@@ -1,25 +1,28 @@
 
 
-import 'package:untitled/core/constants/app_assets.dart';
+ 
+ 
 
-import '../data/models/onboardingmodel.dart';
+import 'package:untitled/core/routing/route_export_features/export_onboarding/route_export_onboarding.dart';
+
+
 
 class OnboardingData{
 
   List<OnboardingModel> items = [
     OnboardingModel(  image:  AppAssets.doctor1,
-        title: "Find Trusted Doctors",
-        description: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of it over 2000 years old.",
+        title: AppStrings.titleOnboarding1,
+        description:  AppStrings.descriptionOnboarding1
       ),
 
     OnboardingModel( image: AppAssets.doctor2,
-        title: "Choose Best Doctors",
-        description: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of it over 2000 years old.",
+        title: AppStrings.titleOnboarding2,
+        description:  AppStrings.descriptionOnboarding2
        ),
 
     OnboardingModel( image: AppAssets.doctor3,
-        title: "Easy Appointments",
-        description:"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of it over 2000 years old.",
+        title: AppStrings.titleOnboarding3,
+        description: AppStrings.descriptionOnboarding3
        ),
 
   ];
