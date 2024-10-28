@@ -1,9 +1,5 @@
 import 'package:untitled/core/routing/route_export_features/export_home/export_home.dart';
-import 'package:untitled/core/routing/route_export_features/export_onboarding/route_export_onboarding.dart';
-import 'package:untitled/features/home/presentation/widgets/feature_doctor_card.dart';
-import 'package:untitled/features/home/presentation/widgets/icon_card.dart';
-import 'package:untitled/features/home/presentation/widgets/popular_doctor_card.dart';
-
+ 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 

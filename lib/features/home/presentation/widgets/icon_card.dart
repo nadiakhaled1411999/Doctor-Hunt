@@ -4,8 +4,8 @@ import '../../../../core/routing/route_export_features/export_home/export_home.d
 
 class IconCard extends StatelessWidget {
 
-  final Color colorCard;  // تغيير النوع إلى Color
-  final String icon;  // تغيير النوع إلى String (المسار إلى الأيقونة)
+  final Color colorCard;   
+  final String icon;   
 
   const IconCard({super.key,required this.colorCard,required this.icon});
 
