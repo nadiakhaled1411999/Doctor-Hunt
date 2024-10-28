@@ -35,10 +35,12 @@ class CustomSVGImage extends StatelessWidget {
     }
     return GestureDetector(
       onTap: onTap,
-      child: SvgPicture.asset(
+      child: SvgPicture.asset( asset,
         width: width?.w ?? 0,
+        colorFilter: color != null ? ColorFilter.mode(color!, BlendMode.srcIn) : null,
         height: height?.h ?? 0,
-        asset,
+
+
 
       //  fit: fit,
         matchTextDirection: matchTextDirection,

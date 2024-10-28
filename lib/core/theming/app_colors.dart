@@ -22,6 +22,7 @@ class AppColors {
   static const colorCardIcon3=Color( 0xffffc56b);
   static const colorCardIcon4=Color(0xffff6a63);
   static const amber=Color(0xffF6D060);
+  static const iconBarColor=Color( 0xff858EA9);
 
 
 

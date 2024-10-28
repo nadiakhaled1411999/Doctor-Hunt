@@ -12,7 +12,7 @@ class IconCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  SizedBox(
-      width: 100.w,
+      width:90 .w,
       height: 100.h,
       child: Card(
         color: colorCard,
@@ -22,8 +22,8 @@ class IconCard extends StatelessWidget {
         child: Center(
           child:CustomSVGImage(
             asset: icon,
-            width:35.w,
-            height: 35.h,
+            width:27.w,
+            height: 27.h,
           ),
 
         ),

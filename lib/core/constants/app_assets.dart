@@ -46,9 +46,14 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
   static const String star = "${SvgAssets.svgAssets}star.svg";
   static const String heart = "${SvgAssets.svgAssets}heart.svg";
   static const String heartred = "${SvgAssets.svgAssets}heartred.svg";
+  static const String homeIcon = "${SvgAssets.svgAssets}homeIcon.svg";
+  static const String favoritesIcon= "${SvgAssets.svgAssets}favoritesIcon.svg";
+  static const String readingIcon = "${SvgAssets.svgAssets}readingIcon.svg";
+  static const String messagesIcon = "${SvgAssets.svgAssets}messagesIcon.svg";
 
 
-  // Video Assets
+
+// Video Assets
 //   static const String testOnBoardingVideo =
 //       "${VideoAssets.videoAssets}test.mp4";
 }
