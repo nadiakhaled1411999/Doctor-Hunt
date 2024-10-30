@@ -1,7 +1,7 @@
 import 'package:untitled/core/routing/route_export_features/export_home/export_home.dart';
 
-
 class CustomBottomNavigationBar extends StatelessWidget {
+  //! TODO: Add the bottom navigation bar to the widgets folder in the core directory, as it will be shared across the application.
   final int selectedIndex;
   final ValueChanged<int> onTap;
   const CustomBottomNavigationBar(
@@ -26,7 +26,6 @@ class CustomBottomNavigationBar extends StatelessWidget {
             label: '',
           ),
           BottomNavigationBarItem(
-            
               icon: CircleAvatarNavigationBarItem(
                   asset: AppAssets.favoritesIcon,
                   isSelected: selectedIndex == 1),

@@ -1,5 +1,3 @@
-
-
 import '../../../../core/routing/route_export_features/export_home/export_home.dart';
 
 class FeatureDoctorCard extends StatelessWidget {
@@ -8,15 +6,17 @@ class FeatureDoctorCard extends StatelessWidget {
   final String imageFeatureDoctor;
   final String iconPath;
   final String rate;
-  const FeatureDoctorCard({super.key,
-    required this.name,
-    required this.salary,
-    required this.imageFeatureDoctor,
-    required this.iconPath,required this.rate});
+  const FeatureDoctorCard(
+      {super.key,
+      required this.name,
+      required this.salary,
+      required this.imageFeatureDoctor,
+      required this.iconPath,
+      required this.rate});
 
   @override
   Widget build(BuildContext context) {
-    return  SizedBox(
+    return SizedBox(
       height: 170.h,
       width: 130.w,
       child: Card(
@@ -26,11 +26,9 @@ class FeatureDoctorCard extends StatelessWidget {
         ),
         child: Column(children: [
           Padding(
-            padding: EdgeInsets.symmetric(
-                vertical: 7.h, horizontal: 7.w),
+            padding: EdgeInsets.symmetric(vertical: 7.h, horizontal: 7.w),
             child: Row(
-              mainAxisAlignment:
-              MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CustomSVGImage(
                   asset: iconPath,
@@ -45,7 +43,9 @@ class FeatureDoctorCard extends StatelessWidget {
                       height: 10.h,
                     ),
                     horizontalSpace(2),
-                    Text(rate,style: AppStyles.getBoldStyle(color:AppColors.black,fontSize: 12)),
+                    Text(rate,
+                        style: AppStyles.getBoldStyle(
+                            color: AppColors.black, fontSize: 12)),
                   ],
                 ),
               ],
@@ -53,21 +53,23 @@ class FeatureDoctorCard extends StatelessWidget {
           ),
           CircleAvatar(
             radius: 40,
-            backgroundImage:
-            AssetImage(imageFeatureDoctor),
+            backgroundImage: AssetImage(imageFeatureDoctor),
           ),
-          verticalSpace( 14),
-          Text( name, style:  AppStyles.getBoldStyle(color:AppColors.black,fontSize: 18 )),
-          RichText(text:  TextSpan(children: [
-
-            TextSpan(text: '\$', style:  AppStyles.getBoldStyle(color:AppColors.primaryColor,fontSize: 12 )
-            ),
+          verticalSpace(14),
+          Text(name,
+              style:
+                  AppStyles.getBoldStyle(color: AppColors.black, fontSize: 18)),
+          RichText(
+              text: TextSpan(children: [
             TextSpan(
-                text:salary, style:   AppStyles.getBoldStyle(color:AppColors.descriptionColor,fontSize: 12 )),
-          ])
-
-
-          )
+                text: '\$',
+                style: AppStyles.getBoldStyle(
+                    color: AppColors.primaryColor, fontSize: 12)),
+            TextSpan(
+                text: salary,
+                style: AppStyles.getBoldStyle(
+                    color: AppColors.descriptionColor, fontSize: 12)),
+          ]))
         ]),
       ),
     );

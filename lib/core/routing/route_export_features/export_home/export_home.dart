@@ -16,7 +16,7 @@ export  '../../../../core/theming/styles.dart';
 
 export  'package:untitled/core/constants/app_strings.dart';
 export 'package:untitled/features/home/presentation/widgets/build_feature_doctor_tex.dart';
-export   'package:untitled/features/home/presentation/widgets/build_listview_iconcard.dart';
+export   'package:untitled/features/home/presentation/widgets/build_listview_icon_card.dart';
 export   'package:untitled/features/home/presentation/widgets/build_popular_doctortext.dart';
 export   'package:untitled/features/home/presentation/widgets/featured_doctorsList.dart';
 export   'package:untitled/features/home/presentation/widgets/home_back_ground.dart';

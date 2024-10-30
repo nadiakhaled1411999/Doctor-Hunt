@@ -1,6 +1,5 @@
 import 'package:untitled/core/routing/route_export_features/export_home/export_home.dart';
 
-
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -10,7 +9,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int selectedIndex = 0;
-   void onItemTapped(int index) {
+  void onItemTapped(int index) {
     setState(() {
       selectedIndex = index;
     });
@@ -19,10 +18,11 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        bottomNavigationBar:CustomBottomNavigationBar(
+      bottomNavigationBar: CustomBottomNavigationBar(
         selectedIndex: selectedIndex,
         onTap: onItemTapped,
       ),
-        body: HomeBody());
+      body: HomeBody(),
+    );
   }
 }

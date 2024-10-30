@@ -8,6 +8,7 @@ class HomeBackGround extends StatelessWidget {
     return Positioned.fill(
         child: Image.asset(
       AppAssets.bg,
+      //! TODO: Rename the bg
       fit: BoxFit.cover,
     ));
   }

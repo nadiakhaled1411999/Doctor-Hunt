@@ -1,18 +1,15 @@
-
-
 import '../../../../core/routing/route_export_features/export_home/export_home.dart';
 
 class IconCard extends StatelessWidget {
+  final Color colorCard;
+  final String icon;
 
-  final Color colorCard;   
-  final String icon;   
-
-  const IconCard({super.key,required this.colorCard,required this.icon});
+  const IconCard({super.key, required this.colorCard, required this.icon});
 
   @override
   Widget build(BuildContext context) {
-    return  SizedBox(
-      width:90 .w,
+    return SizedBox(
+      width: 90.w,
       height: 100.h,
       child: Card(
         color: colorCard,
@@ -20,15 +17,13 @@ class IconCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
         child: Center(
-          child:CustomSVGImage(
+          child: CustomSVGImage(
             asset: icon,
-            width:27.w,
+            width: 27.w,
             height: 27.h,
           ),
-
         ),
       ),
-    )
-    ;
+    );
   }
 }
