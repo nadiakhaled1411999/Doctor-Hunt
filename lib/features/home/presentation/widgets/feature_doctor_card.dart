@@ -5,19 +5,19 @@ import '../../../../core/routing/route_export_features/export_home/export_home.d
 class FeatureDoctorCard extends StatelessWidget {
   final String name;
   final String salary;
-  final String imageFeatuerDoctor;
+  final String imageFeatureDoctor;
   final String iconPath;
   final String rate;
   const FeatureDoctorCard({super.key,
     required this.name,
     required this.salary,
-    required this.imageFeatuerDoctor,
+    required this.imageFeatureDoctor,
     required this.iconPath,required this.rate});
 
   @override
   Widget build(BuildContext context) {
     return  SizedBox(
-      height: 200.h,
+      height: 170.h,
       width: 130.w,
       child: Card(
         color: AppColors.white,
@@ -45,11 +45,7 @@ class FeatureDoctorCard extends StatelessWidget {
                       height: 10.h,
                     ),
                     horizontalSpace(2),
-                    Text(rate,style: TextStyle(
-                        color: AppColors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 12.sp,
-                        fontFamily: 'Rubik'),),
+                    Text(rate,style: AppStyles.getBoldStyle(color:AppColors.black,fontSize: 12)),
                   ],
                 ),
               ],
@@ -58,28 +54,16 @@ class FeatureDoctorCard extends StatelessWidget {
           CircleAvatar(
             radius: 40,
             backgroundImage:
-            AssetImage(imageFeatuerDoctor),
+            AssetImage(imageFeatureDoctor),
           ),
-          verticalSpace( 7),
-          Text( name, style: TextStyle(
-              color: AppColors.black,
-              fontWeight: FontWeight.bold,
-              fontSize: 18.sp,
-              fontFamily: 'Rubik')),
+          verticalSpace( 14),
+          Text( name, style:  AppStyles.getBoldStyle(color:AppColors.black,fontSize: 18 )),
           RichText(text:  TextSpan(children: [
 
-            TextSpan(text: '\$', style: TextStyle(
-                color: AppColors.primaryColor,
-                fontWeight: FontWeight.bold,
-                fontSize: 12.sp,
-                fontFamily: 'Rubik')
+            TextSpan(text: '\$', style:  AppStyles.getBoldStyle(color:AppColors.primaryColor,fontSize: 12 )
             ),
             TextSpan(
-                text:salary, style: TextStyle(
-                color: AppColors.descriptionColor,
-                fontWeight: FontWeight.bold,
-                fontSize: 12.sp,
-                fontFamily: 'Rubik')),
+                text:salary, style:   AppStyles.getBoldStyle(color:AppColors.descriptionColor,fontSize: 12 )),
           ])
 
 

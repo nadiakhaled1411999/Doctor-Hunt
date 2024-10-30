@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../theming/app_colors.dart';
-import '../theming/app_styles.dart';
+import '../theming/styles.dart';
 
 class AppTextFormField extends StatelessWidget {
   final EdgeInsetsGeometry? contentPadding;
@@ -104,7 +104,7 @@ class AppTextFormField extends StatelessWidget {
             width: 1.w,
           ),
         ),
-        hintStyle: hintStyle ?? AppStyles.getMediumStyle(),
+        hintStyle: hintStyle ??  AppStyles.getRegularStyle(fontSize: 13,fontWeight: FontWeight.w500),
         // hintStyle: Uses the provided hintStyle or defaults to a predefined text style.
         hintText: hintText,
         // hintText: Displays the provided hint text.
@@ -144,7 +144,7 @@ class AppTextFormField extends StatelessWidget {
       // cursorColor: Sets the color of the cursor to the primary blue color.
       obscureText: isObscureText ?? false,
       // obscureText: Uses the provided isObscureText value or defaults to false.
-      style: inputStyle ?? AppStyles.getMediumStyle(),
+      style: inputStyle ?? AppStyles.getRegularStyle(fontSize: 13,fontWeight: FontWeight.w500),
       // style: Uses the provided inputStyle or defaults to a predefined text style.
     );
   }

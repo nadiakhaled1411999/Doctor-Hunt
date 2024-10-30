@@ -1,10 +1,7 @@
 // ignore_for_file: prefer_const_constructors_in_immutables
+ 
 
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../../../../core/heplers/spacing.dart';
-import '../../../../core/widgets/text_form_field.dart';
+ import 'package:untitled/core/routing/route_export_features/export_auth/export_signup.dart';
 
 class SignupTextFormFiled extends StatelessWidget {
   SignupTextFormFiled({super.key});

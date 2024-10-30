@@ -13,7 +13,7 @@ class AppStyles {
   factory AppStyles() => _instance;
 
   static TextStyle getRegularStyle({
-    double fontSize = 15,
+    double fontSize = 13,
     Color? color = AppColors.descriptionColor,
     FontWeight? fontWeight = FontWeight.w600,
     String fontFamily = FontFamilies.interFamily,
@@ -28,7 +28,7 @@ class AppStyles {
     Color? backgroundColor,
   }) =>
       TextStyle(
-        fontSize: fontSize,
+        fontSize: fontSize.sp,
         fontWeight: fontWeight,
          fontFamily: fontFamily,
         color: color,
@@ -44,7 +44,7 @@ class AppStyles {
       );
 
   static TextStyle getBoldStyle({
-    double fontSize = 29,
+    double fontSize = 28,
     Color? color = AppColors.titleColor,
     FontWeight? fontWeight = FontWeight.bold,
      String fontFamily = FontFamilies.interFamily,
@@ -59,7 +59,7 @@ class AppStyles {
     Color? backgroundColor,
   }) =>
       TextStyle(
-        fontSize: fontSize,
+        fontSize: fontSize.sp,
         fontWeight: fontWeight,
         fontFamily: fontFamily,
         color: color,
@@ -75,7 +75,7 @@ class AppStyles {
       );
 
   static TextStyle getSemiBoldStyle({
-    double fontSize = 12,
+    double fontSize = 14,
     Color? color = AppColors.primaryColor,
     FontWeight? fontWeight = FontWeight.w600,
     String fontFamily = FontFamilies.interFamily,
@@ -120,7 +120,7 @@ class AppStyles {
     Color? backgroundColor,
   }) =>
       TextStyle(
-        fontSize: fontSize,
+        fontSize: fontSize.sp,
         fontWeight: fontWeight,
           fontFamily: fontFamily,
         color: color,

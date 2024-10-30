@@ -6,7 +6,7 @@ export  'package:untitled/core/routing/routes.dart';
 export  'package:untitled/core/theming/app_colors.dart';
 export  'package:untitled/core/theming/styles.dart';
 export  'package:untitled/features/onboarding/logic/onboarding_data.dart';
-export 'package:untitled/core/theming/app_strings.dart';
+export 'package:untitled/core/constants/app_strings.dart';
 export 'package:untitled/features/onboarding/data/models/onboardingmodel.dart';
 export 'package:untitled/features/onboarding/presentation/widgets/onboarding_body.dart';
 export  'package:untitled/features/onboarding/presentation/widgets/onboarding_back_ground.dart';

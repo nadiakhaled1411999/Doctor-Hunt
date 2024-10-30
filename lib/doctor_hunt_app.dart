@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:untitled/core/theming/app_strings.dart';
+import 'package:untitled/core/constants/app_strings.dart';
 
 import 'core/routing/app_router.dart';
 import 'features/onboarding/presentation/screens/onboarding.dart';
@@ -11,7 +11,7 @@ class DoctorHuntApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context){
-    final DocdtorHuntRouter  router =DocdtorHuntRouter();
+    final DoctorHuntRouter  router =DoctorHuntRouter();
     return   ScreenUtilInit(
       designSize: const Size(360, 690),
       minTextAdapt: true,

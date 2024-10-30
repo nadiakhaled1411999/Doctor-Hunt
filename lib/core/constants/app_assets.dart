@@ -21,7 +21,7 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
   static const String backOnBoarding2 = "${PngAssets.pngAssets}backOnBoarding2.png";
 
   static const String bg = "${PngAssets.pngAssets}bg.png";
-  static const String bglogin = "${PngAssets.pngAssets}bglogin.png";
+  static const String login = "${PngAssets.pngAssets}bglogin.png";
   static const String homeImage = "${PngAssets.pngAssets}homeImage.png";
   static const String popularDoctor1 ="${PngAssets.pngAssets}popularDoctor1.png";
   static const String popularDoctor2="${PngAssets.pngAssets}popularDoctor2.png";

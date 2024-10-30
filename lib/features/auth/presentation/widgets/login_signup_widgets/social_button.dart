@@ -1,16 +1,13 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+ 
+ import 'package:untitled/core/routing/route_export_features/export_auth/export_login.dart';
 
-import '../../../../core/heplers/spacing.dart';
-import '../../../../core/theming/app_colors.dart';
-import '../../../../core/theming/app_styles.dart';
-
-class SochialButton extends StatelessWidget {
+ 
+ 
+class SocialButton extends StatelessWidget {
   final String textName;
   final String iconPath;
 
-  const SochialButton(
+  const SocialButton(
       {super.key, required this.textName, required this.iconPath});
 
   @override
@@ -35,14 +32,17 @@ class SochialButton extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SvgPicture.asset(
-              iconPath,
-              width: 20.w,
-            ),
+               CustomSVGImage(
+            asset:iconPath ,
+            width:20.w,
+            height: 20.h,
+            
+            
+          ),
             horizontalSpace(7),
             Text(
               textName,
-              style: AppStyles.getMediumStyle(),
+              style:AppStyles.getRegularStyle(fontSize: 13,),
             ),
           ],
         ),

@@ -1,7 +1,7 @@
 
 
 import 'route_export.dart';
-class DocdtorHuntRouter {
+class DoctorHuntRouter {
   Route? generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case Routes.OnboardingPage:

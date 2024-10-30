@@ -34,17 +34,10 @@ class PopularDoctorCard extends StatelessWidget {
                 child: Column(
                   children: [
                     Text(name,
-                        style: TextStyle(
-                            color: AppColors.black,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16.sp,
-                            fontFamily: 'Rubik')),
+                        style:  AppStyles.getBoldStyle(color:AppColors.black,fontSize: 16)),
+                        
                     Text(specialty,
-                        style: TextStyle(
-                            color: AppColors.descriptionColor,
-                            fontWeight: FontWeight.w500,
-                            fontSize: 11.sp,
-                            fontFamily: 'Rubik')),
+                        style:  AppStyles.getRegularStyle(fontSize: 11,fontWeight: FontWeight.w500)),
                     Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [

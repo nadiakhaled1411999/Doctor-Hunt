@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+ 
+ 
+import 'package:untitled/core/routing/route_export_features/export_auth/export_login.dart';
 
-import '../../../../core/heplers/spacing.dart';
-import '../../../../core/widgets/text_form_field.dart';
+ 
 
 class LoginTextFormField extends StatelessWidget {
   LoginTextFormField({super.key});
@@ -16,16 +16,16 @@ class LoginTextFormField extends StatelessWidget {
         SizedBox(
           width: 400.w,
           child: AppTextFormField(
-            hintText: 'itsmemamun1@gmail.com',
+            hintText: AppStrings.emailHintText,
             radius: 10,
             controller: emailController,
             validator: (value) {
               if (value!.isEmpty) {
-                return 'Please enter your email';
+                return AppStrings.emailValidationMessage;
               }
               return null;
             },
-            suffixIcon: Icon(
+            suffixIcon:   Icon(
               Icons.check_outlined,
             ),
           ),
@@ -34,16 +34,16 @@ class LoginTextFormField extends StatelessWidget {
         SizedBox(
             width: 400.w,
             child: AppTextFormField(
-              hintText: '***********',
+              hintText:AppStrings.passwordHintText,
               radius: 12,
               controller: passwordController,
               validator: (value) {
                 if (value!.isEmpty) {
-                  return 'Please enter your password';
+                  return AppStrings.passwordValidationMessage;
                 }
                 return null;
               },
-              suffixIcon: Icon(
+              suffixIcon:  Icon(
                 Icons.visibility_off,
               ),
             )),
