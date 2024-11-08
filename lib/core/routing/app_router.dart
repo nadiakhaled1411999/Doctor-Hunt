@@ -4,15 +4,15 @@ import 'route_export.dart';
 class DoctorHuntRouter {
   Route? generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case Routes.OnboardingPage:
+      case Routes.onboardingPage:
         return MaterialPageRoute(
            builder: (context) => const OnboardingPage(),
          );
-      case Routes.LoginScreen:
+      case Routes.loginScreen:
         return MaterialPageRoute(builder: (context) => const LoginScreen());
-      case Routes.SignUpScreen:
-        return MaterialPageRoute(builder: (cotext) => const SignUpScreen());
-      case Routes.HomeScreen:
+      case Routes.signUpScreen:
+        return MaterialPageRoute(builder: (context) => const SignUpScreen());
+      case Routes.homeScreen:
         return MaterialPageRoute(builder:  (context) => HomeScreen());
  
       default:

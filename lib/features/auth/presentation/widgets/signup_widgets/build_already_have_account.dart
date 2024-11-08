@@ -15,7 +15,7 @@ class  BuildAlreadyHaveAccount extends StatelessWidget {
                           ),
                           TextButton(
                             onPressed: () {
-                              Navigator.pushNamed(context, Routes.LoginScreen);
+                              Navigator.pushNamed(context, Routes.loginScreen);
                             },
                             child: Text(
                               AppStrings.logInText,

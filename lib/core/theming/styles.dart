@@ -134,4 +134,40 @@ class AppStyles {
         decorationColor: decorationColor,
         backgroundColor: backgroundColor,
       );
+
+
+
+
+
+
+        static TextStyle getCustomStyle({
+    double fontSize = 12,
+    Color? color = AppColors.descriptionColor,
+    FontWeight? fontWeight = FontWeight.w500,
+    String fontFamily = FontFamilies.interFamily,
+    double? letterSpacing,
+    FontStyle? fontStyle,
+    double? height,
+    double? wordSpacing,
+    TextDecoration? decoration,
+    TextDecorationStyle? decorationStyle,
+    TextBaseline? textBaseline,
+    Color? decorationColor,
+    Color? backgroundColor,
+  }) =>
+      TextStyle(
+        fontSize: fontSize.sp,
+        fontWeight: fontWeight,
+         fontFamily: fontFamily,
+        color: color,
+        letterSpacing: letterSpacing,
+        fontStyle: fontStyle,
+        height: height,
+        wordSpacing: wordSpacing,
+        decoration: decoration,
+        decorationStyle: decorationStyle,
+        textBaseline: textBaseline,
+        decorationColor: decorationColor,
+        backgroundColor: backgroundColor,
+      );
 }

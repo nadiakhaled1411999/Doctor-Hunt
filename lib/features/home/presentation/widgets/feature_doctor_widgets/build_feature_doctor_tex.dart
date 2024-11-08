@@ -1,4 +1,4 @@
-import 'package:untitled/core/routing/route_export_features/export_home/export_home.dart';
+import 'package:untitled/core/routing/route_export_features/export_home_screen/export_home_screen.dart';
 
 class BuildFeatureDoctorTex extends StatelessWidget {
   const BuildFeatureDoctorTex({super.key});
@@ -14,9 +14,9 @@ class BuildFeatureDoctorTex extends StatelessWidget {
               style:
                   AppStyles.getBoldStyle(color: AppColors.black, fontSize: 18)),
           Text(AppStrings.seeAllText,
-              style: AppStyles.getRegularStyle(
-                  //! TODO: In the current implementation, clarification is needed regarding the use of a font weight of 500 when the text is already styled as regular. Additionally, it is unclear why the weight of the regular style text was altered.
-                  fontWeight: FontWeight.w500)),
+              style: AppStyles.getCustomStyle()
+                 
+                  ),
         ],
       ),
     );

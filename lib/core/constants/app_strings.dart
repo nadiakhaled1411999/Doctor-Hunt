@@ -52,11 +52,17 @@ static const String  signUpText = 'Sign up';
 
 
 
+
   static const String hiText= 'Hi Handwerker!';
   static const String findYourDoctorText = "Find Your Doctor";
   static const String popularDoctorText= 'Popular Doctor';
   static const String seeAllText = 'See all>';
  static const String featureDoctorText = "Feature Doctor";
+ static const String nameHintText = 'Name';
+  static const String nameValidationMessage = 'Please enter your Name';
+
+static const String emailHint= 'Email';
+ static const String passwordHint = 'Password';
   
 
 

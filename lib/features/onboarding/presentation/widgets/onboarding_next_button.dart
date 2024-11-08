@@ -23,7 +23,7 @@ class OnboardingNextButton extends StatelessWidget {
       child: TextButton(
         onPressed: () {
           if (currentIndex == itemCount - 1) {
-            Navigator.pushNamed(context, Routes.LoginScreen);
+            Navigator.pushNamed(context, Routes.loginScreen);
           } else {
             pageController.animateToPage(
               currentIndex + 1,

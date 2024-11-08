@@ -42,7 +42,7 @@ class SocialButton extends StatelessWidget {
             horizontalSpace(7),
             Text(
               textName,
-              style:AppStyles.getRegularStyle(fontSize: 13,),
+              style:AppStyles.getRegularStyle(),
             ),
           ],
         ),

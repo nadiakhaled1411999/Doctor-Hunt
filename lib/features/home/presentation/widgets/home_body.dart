@@ -1,4 +1,4 @@
-import 'package:untitled/core/routing/route_export_features/export_home/export_home.dart';
+import 'package:untitled/core/routing/route_export_features/export_home_screen/export_home_screen.dart';
 
 class HomeBody extends StatelessWidget {
   const HomeBody({super.key});
@@ -12,12 +12,12 @@ class HomeBody extends StatelessWidget {
           Column(children: [
             HomeContainer(),
             verticalSpace(10),
-            BuildListviewIconcard(),
+            BuildListIconCard(),
             verticalSpace(10),
             BuildPopularDoctorText(),
             PopularDoctorslist(),
             BuildFeatureDoctorTex(),
-            FeaturedDoctorslist(),
+            FeaturedDoctorsList(),
           ]),
         ],
       ),

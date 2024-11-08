@@ -14,7 +14,7 @@ class  BuildSignupSection extends StatelessWidget {
                         ),
                         TextButton(
                           onPressed: () {
-                            Navigator.pushNamed(context, Routes.SignUpScreen);
+                            Navigator.pushNamed(context, Routes.signUpScreen);
 
                           },
                           child: Text(

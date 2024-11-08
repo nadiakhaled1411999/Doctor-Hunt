@@ -31,7 +31,7 @@ class AppTextFormField extends StatelessWidget {
   // final Function(String?) validator;
   final Function(String?)? validator;
   final Color? enabledBorderSideColor;
-  final Color? focusdBorderColor;
+  final Color? focusBorderColor;
   final int? radius;
   final String? labelText;
   final TextStyle? labelStyle;
@@ -52,7 +52,7 @@ class AppTextFormField extends StatelessWidget {
     this.enabledBorderSideColor,
     this.labelText,
     this.labelStyle,
-    this.focusdBorderColor,
+    this.focusBorderColor,
     this.cursorColor,  this.validator,
   });
 
@@ -89,7 +89,7 @@ class AppTextFormField extends StatelessWidget {
                 radius!=null?radius!.r:0.r,
               ),
               borderSide: BorderSide(
-                color: focusdBorderColor ?? AppColors.primaryColor,
+                color: focusBorderColor ?? AppColors.primaryColor,
                 width: 1.w,
               ),
             ),

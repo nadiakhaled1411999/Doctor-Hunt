@@ -14,7 +14,7 @@ class  BuildSocialButtons extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           SocialButton(
-                              textName: AppStrings.googleText, iconPath: AppAssets.Google),
+                              textName: AppStrings.googleText, iconPath: AppAssets.google),
                           horizontalSpace(12),
                           SocialButton(
                             textName: AppStrings.facebookText,

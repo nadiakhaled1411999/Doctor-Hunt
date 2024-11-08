@@ -20,8 +20,8 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
 
   static const String backOnBoarding2 = "${PngAssets.pngAssets}backOnBoarding2.png";
 
-  static const String bg = "${PngAssets.pngAssets}bg.png";
-  static const String login = "${PngAssets.pngAssets}bglogin.png";
+  static const String background1 = "${PngAssets.pngAssets}background1.png";
+  static const String login = "${PngAssets.pngAssets}background.png";
   static const String homeImage = "${PngAssets.pngAssets}homeImage.png";
   static const String popularDoctor1 ="${PngAssets.pngAssets}popularDoctor1.png";
   static const String popularDoctor2="${PngAssets.pngAssets}popularDoctor2.png";
@@ -29,28 +29,30 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
   static const String featureDoctor1="${PngAssets.pngAssets}featureDoctor1.png";
   static const String featureDoctor2 ="${PngAssets.pngAssets}featureDoctor2.png";
   static const String featureDoctor3="${PngAssets.pngAssets}featureDoctor3.png";
+static const String emailIcon="${PngAssets.pngAssets}emailIcon.png";
+  static const String eyeImage="${PngAssets.pngAssets}eyeImage.png";
 
 
 
   // Icons SVG
 //   static const String carSolidIcon = "${SvgAssets.svgAssets}car_solid.svg";
-  static const String Google = "${SvgAssets.svgAssets}Google.svg";
+  static const String google = "${SvgAssets.svgAssets}Google.svg";
   static const String facebook = "${SvgAssets.svgAssets}facebook.svg";
-  static const String emailIcon = "${SvgAssets.svgAssets}emailIcon.svg";
+   
   static const String passwordIcon = "${SvgAssets.svgAssets}passwordIcon.svg";
   static const String toothIcon = "${SvgAssets.svgAssets}toothIcon.svg";
   static const String heartIcon = "${SvgAssets.svgAssets}heartIcon.svg";
-  static const String eyeIcon = "${SvgAssets.svgAssets}eyeIcon.svg";
+  
   static const String bodyIcon = "${SvgAssets.svgAssets}bodyIcon.svg";
   static const String starAmber = "${SvgAssets.svgAssets}starAmber.svg";
   static const String star = "${SvgAssets.svgAssets}star.svg";
   static const String heart = "${SvgAssets.svgAssets}heart.svg";
-  static const String heartred = "${SvgAssets.svgAssets}heartred.svg";
+  static const String heartRed = "${SvgAssets.svgAssets}heartRed.svg";
   static const String homeIcon = "${SvgAssets.svgAssets}homeIcon.svg";
   static const String favoritesIcon= "${SvgAssets.svgAssets}favoritesIcon.svg";
   static const String readingIcon = "${SvgAssets.svgAssets}readingIcon.svg";
   static const String messagesIcon = "${SvgAssets.svgAssets}messagesIcon.svg";
-
+static const String eyeIcon = "${SvgAssets.svgAssets}eyeIcon.svg";
 
 
 // Video Assets

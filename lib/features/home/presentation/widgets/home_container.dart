@@ -1,4 +1,4 @@
-import 'package:untitled/core/routing/route_export_features/export_home/export_home.dart';
+import 'package:untitled/core/routing/route_export_features/export_home_screen/export_home_screen.dart';
 
 class HomeContainer extends StatelessWidget {
   const HomeContainer({super.key});
@@ -18,12 +18,12 @@ class HomeContainer extends StatelessWidget {
       child: Center(
         child: ListTile(
           title: Text(AppStrings.hiText,
-              style: AppStyles.getMediumStyle(
+              style: AppStyles.getCustomStyle(
                 color: AppColors.subtitleColor,
-                fontWeight: FontWeight.w500,
+                fontSize: 18,
               )),
           subtitle: Text(AppStrings.findYourDoctorText,
-              style: AppStyles.getMediumStyle(color: AppColors.white)),
+              style: AppStyles.getMediumStyle()),
           trailing: CircleAvatar(
             radius: 30.r,
             backgroundImage: AssetImage(AppAssets.homeImage),

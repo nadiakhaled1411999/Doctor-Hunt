@@ -16,12 +16,12 @@ class SignupTextFormFiled extends StatelessWidget {
         SizedBox(
           width: 400.w,
           child: AppTextFormField(
-            hintText: 'Name',
+            hintText:AppStrings.nameHintText ,
             radius: 10,
             controller: nameController,
             validator: (value) {
               if (value!.isEmpty) {
-                return 'Please enter your Name';
+                return AppStrings.nameValidationMessage ;
               }
               return null;
             },
@@ -31,12 +31,12 @@ class SignupTextFormFiled extends StatelessWidget {
         SizedBox(
             width: 400.w,
             child: AppTextFormField(
-              hintText: 'Email',
+              hintText: AppStrings.emailHint,
               radius: 5,
               controller: emailController,
               validator: (value) {
                 if (value!.isEmpty) {
-                  return 'Please enter your Email';
+                  return AppStrings.emailValidationMessage;
                 }
                 return null;
               },
@@ -45,12 +45,12 @@ class SignupTextFormFiled extends StatelessWidget {
         SizedBox(
             width: 400.w,
             child: AppTextFormField(
-              hintText: 'password',
+              hintText: AppStrings.passwordHint,
               radius: 12,
               controller: passwordController,
               validator: (value) {
                 if (value!.isEmpty) {
-                  return 'Please enter your password';
+                  return AppStrings.passwordValidationMessage;
                 }
                 return null;
               },

@@ -1,7 +1,7 @@
-import 'package:untitled/core/routing/route_export_features/export_home/export_home.dart';
+import 'package:untitled/core/routing/route_export_features/export_home_screen/export_home_screen.dart';
 
 class CustomBottomNavigationBar extends StatelessWidget {
-  //! TODO: Add the bottom navigation bar to the widgets folder in the core directory, as it will be shared across the application.
+   //!Done
   final int selectedIndex;
   final ValueChanged<int> onTap;
   const CustomBottomNavigationBar(

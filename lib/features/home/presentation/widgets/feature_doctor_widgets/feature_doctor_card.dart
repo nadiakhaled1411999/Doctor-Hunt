@@ -1,4 +1,4 @@
-import '../../../../core/routing/route_export_features/export_home/export_home.dart';
+import '../../../../../core/routing/route_export_features/export_home_screen/export_home_screen.dart';
 
 class FeatureDoctorCard extends StatelessWidget {
   final String name;
@@ -13,8 +13,7 @@ class FeatureDoctorCard extends StatelessWidget {
       required this.imageFeatureDoctor,
       required this.iconPath,
       required this.rate});
-
-  @override
+  @override     
   Widget build(BuildContext context) {
     return SizedBox(
       height: 170.h,

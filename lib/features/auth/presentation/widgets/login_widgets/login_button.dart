@@ -12,7 +12,7 @@ class  LoginButton extends StatelessWidget {
                       buttonWidth: 290,
                       buttonHeight: 54,
                       onPressed: () {
-                        Navigator.pushNamed(context, Routes.HomeScreen);
+                        Navigator.pushNamed(context, Routes.homeScreen);
                       },
                     );
   }

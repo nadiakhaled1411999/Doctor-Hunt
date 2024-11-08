@@ -1,6 +1,8 @@
  
 import 'package:untitled/core/routing/route_export_features/export_auth/export_signup.dart';
 
+
+
 class  SignUpBody extends StatefulWidget {
   const  SignUpBody({super.key});
 
@@ -13,7 +15,7 @@ class SignUpBodyState extends State< SignUpBody> {
   Widget build(BuildContext context) {
     return Stack(
           children: [
-          
+           SignupBackGround (),
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: Center(
