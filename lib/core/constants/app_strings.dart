@@ -65,5 +65,13 @@ static const String emailHint= 'Email';
  static const String passwordHint = 'Password';
   
 
+static const String phoneHint= 'phone';
+ static const String genderHint = 'gender';
+  static const String phoneValidationMessage = 'Please enter your phone';
+   static const String genderValidationMessage = 'Please enter your gender';
+static const String passwordConfirmationHint= 'password_confirmation';
+ static const String  passwordConfirmationValidation= 'Please enter  passwordConfirmation';
+
+  
 
 }
