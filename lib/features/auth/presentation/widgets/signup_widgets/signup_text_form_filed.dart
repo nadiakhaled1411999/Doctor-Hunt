@@ -94,7 +94,7 @@ class SignupTextFormFiled extends StatelessWidget {
                   Icons.visibility_off,
                 ),
               )),
-              verticalSpace(20),
+              verticalSpace(20), 
                SizedBox(
               width: 400.w,
               child: AppTextFormField(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:untitled/core/constants/app_strings.dart';
 
@@ -19,6 +20,7 @@ class DoctorHuntApp extends StatelessWidget {
       // Use builder only if you need to use library outside ScreenUtilInit context
       builder: (_ , child) {
         return MaterialApp(
+          builder: EasyLoading.init(),
           debugShowCheckedModeBanner: false,
           title:  AppStrings.appName,
 
