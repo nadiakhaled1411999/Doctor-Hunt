@@ -14,7 +14,6 @@ class LoginButton extends StatelessWidget {
             buttonHeight: 54,
             onPressed: () {
               c.loginValidate();
-            
             },
           )
         : const CircularProgressIndicator(

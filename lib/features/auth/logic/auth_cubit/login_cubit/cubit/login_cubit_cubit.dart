@@ -16,15 +16,15 @@ class LoginCubit extends Cubit<LoginState> {
     isLoading = true;
     emit(LoginLoading());
     var result = await loginRepo.loginUser(
-        email: emailController, password: passwordController);
+        email: emailController.text, password: passwordController.text);
     result.fold((failure) {
       isLoading = false;
       emit(LoginError(error: failure.errorMessage));
     }, (token) {
       isLoading = false;
-      preferences.setString('token', token.data!.token.toString() ?? " ");
-      preferences.setString("username", token.data!.username.toString() ?? "");
-      emit(LoginSucess());
+      preferences.setString('token', token.data!.token.toString());
+      preferences.setString("username", token.data!.username.toString());
+      emit(LoginSuccess());
     });
     
   }
