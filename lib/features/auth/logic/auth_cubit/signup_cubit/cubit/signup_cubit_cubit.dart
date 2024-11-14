@@ -3,8 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
 
-
-
 import 'package:untitled/features/auth/data/repos/auth_repos/repo_auth.dart';
 
 import '../../../../../../core/routing/route_export_features/export_auth/export_signup.dart';
@@ -43,11 +41,13 @@ class SignupCubit extends Cubit<SignupState> {
       preferences.setString("token", token.data!.token.toString());
       preferences.setString("username", token.data!.username.toString());
       emit(SignupSuccess());
+     
     });
   }
-   void signupValidate() {
-      if (signupKey.currentState!.validate()) {
-        signupUser();
-      }
+
+  void signupValidate() {
+    if (signupKey.currentState!.validate()) {
+      signupUser();
     }
+  }
 }

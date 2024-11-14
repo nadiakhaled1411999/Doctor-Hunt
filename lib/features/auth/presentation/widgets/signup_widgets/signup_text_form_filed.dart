@@ -11,6 +11,7 @@ class SignupTextFormFiled extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var c = context.read<SignupCubit>();
+    
     return SingleChildScrollView(
       child: Form(
         key: c.signupKey,
@@ -21,7 +22,7 @@ class SignupTextFormFiled extends StatelessWidget {
               child: AppTextFormField(
                 hintText: AppStrings.nameHintText,
                 radius: 10,
-                controller:c.nameController ,
+                controller: c.nameController,
                 validator: (value) {
                   if (value!.isEmpty) {
                     return AppStrings.nameValidationMessage;
@@ -36,7 +37,7 @@ class SignupTextFormFiled extends StatelessWidget {
                 child: AppTextFormField(
                   hintText: AppStrings.emailHint,
                   radius: 5,
-                  controller:c.emailController,
+                  controller: c.emailController,
                   validator: (value) {
                     if (value!.isEmpty) {
                       return AppStrings.emailValidationMessage;
@@ -50,7 +51,7 @@ class SignupTextFormFiled extends StatelessWidget {
               child: AppTextFormField(
                 hintText: AppStrings.phoneHint,
                 radius: 10,
-                controller:c.phoneController,
+                controller: c.phoneController,
                 validator: (value) {
                   if (value!.isEmpty) {
                     return AppStrings.phoneValidationMessage;
@@ -97,7 +98,7 @@ class SignupTextFormFiled extends StatelessWidget {
                 child: AppTextFormField(
                   hintText: AppStrings.passwordConfirmationHint,
                   radius: 12,
-                  controller:c.passwordConfirmation,
+                  controller: c.passwordConfirmation,
                   validator: (value) {
                     if (value!.isEmpty) {
                       return AppStrings.passwordConfirmationValidation;
