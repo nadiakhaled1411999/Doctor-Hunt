@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 import 'package:untitled/core/error/failure.dart';
 import 'package:untitled/features/auth/data/apis/api_services.dart';
 import 'package:untitled/features/auth/data/models/auth_models/login_model.dart';
-import 'package:untitled/features/auth/data/repos/auth_repos/login_repo.dart';
+import 'package:untitled/features/auth/data/repos/auth_repos/repo_auth.dart';
 
 class LoginRepoImplement implements LoginRepo {
   final ApiServices apiServices;
