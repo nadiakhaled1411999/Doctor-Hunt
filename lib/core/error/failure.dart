@@ -22,7 +22,7 @@ class ServerFailure extends Failure {
 
       case DioExceptionType.badResponse:
         return ServerFailure.fromResponse(
-             dioError.response!.statusCode, dioError.response!.data);
+            dioError.response!.statusCode, dioError.response!.data);
 
       case DioExceptionType.cancel:
         return ServerFailure('Request to ApiServer was canceled');
@@ -36,16 +36,17 @@ class ServerFailure extends Failure {
   }
 
   factory ServerFailure.fromResponse(int? statusCode, dynamic response) {
-    if (statusCode== 400 || statusCode == 401 || statusCode== 403 || statusCode == 422) {
+    if (statusCode == 400 ||
+        statusCode == 401 ||
+        statusCode == 403 ||
+        statusCode == 422) {
       return ServerFailure(response["message"]);
     } else if (statusCode == 404) {
       return ServerFailure(response["error"]);
-    } else if (statusCode== 500) {
+    } else if (statusCode == 500) {
       return ServerFailure('Internal Server error, please try later');
-
-    }else{
+    } else {
       return ServerFailure('Opps There was an Error, please try again!');
-
     }
   }
 }

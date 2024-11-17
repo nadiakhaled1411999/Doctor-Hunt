@@ -14,6 +14,7 @@ class LoginCubit extends Cubit<LoginState> {
     this.loginRepo,
   ) : super(LoginInitial());
   Future<void> loginUser() async {
+    //! TODO: Create a SharedPreferences helper class and implement it as a singleton.
     SharedPreferences preferences = await SharedPreferences.getInstance();
     isLoading = true;
     emit(LoginLoading());
@@ -23,20 +24,22 @@ class LoginCubit extends Cubit<LoginState> {
       isLoading = false;
       emit(LoginError(error: failure.errorMessage));
     }, (token) {
+      //! TODO: Try Using the emitted states to reflect loading would be more appropriate.
       isLoading = false;
+      //! TODO: Implement secure token storage using either the secure storage package or Hive.
+      //! Note: Secure storage is the recommended option for enhanced security.
       preferences.setString("token", token.data!.token.toString());
       preferences.setString("username", token.data!.username.toString());
+      //! TODO: Create a `SharedPreferences` class for constants and add keys like "tokenKey" in it.
       String? savedToken = preferences.getString("token");
       String? savedUsername = preferences.getString("username");
       if (savedToken != null && savedUsername != null) {
-         logger.d('Token: $savedToken');
+        logger.d('Token: $savedToken');
         logger.d('Username: $savedUsername');
-
-        
         emit(LoginSuccess());
-      }else {
-      
-      emit(LoginError(error: "NO Save Token and User name"));}
+      } else {
+        emit(LoginError(error: "NO Save Token and User name"));
+      }
     });
   }
 

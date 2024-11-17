@@ -21,7 +21,7 @@ class LoginModel {
 
 class Data {
   String? token;
-  String ?username;
+  String? username;
 
   Data({
     required this.token,

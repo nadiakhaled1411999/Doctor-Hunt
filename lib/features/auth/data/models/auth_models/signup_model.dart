@@ -13,7 +13,7 @@ class SignUpModel {
   factory SignUpModel.fromJson(Map<String, dynamic> json) {
     return SignUpModel(
         message: json["message"],
-        data: json["data"] == null ? null : Data.fromJson(json[ "data"]),
+        data: json["data"] == null ? null : Data.fromJson(json["data"]),
         status: json["status"],
         code: json["code"]);
   }
@@ -21,7 +21,7 @@ class SignUpModel {
 
 class Data {
   String? token;
-  String ?username;
+  String? username;
 
   Data({
     required this.token,

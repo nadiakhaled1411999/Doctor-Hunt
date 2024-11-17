@@ -2,7 +2,6 @@ import 'package:dartz/dartz.dart';
 import 'package:untitled/core/error/failure.dart';
 import 'package:untitled/core/routing/route_export_features/export_auth/export_login.dart';
 import 'package:untitled/features/auth/data/models/auth_models/signup_model.dart';
- 
 
 class SignupRepoImplement implements SignUpRepo {
   final ApiServices apiServices;

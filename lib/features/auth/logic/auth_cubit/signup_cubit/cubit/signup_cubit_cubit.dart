@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
@@ -41,7 +40,6 @@ class SignupCubit extends Cubit<SignupState> {
       preferences.setString("token", token.data!.token.toString());
       preferences.setString("username", token.data!.username.toString());
       emit(SignupSuccess());
-     
     });
   }
 
