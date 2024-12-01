@@ -1,8 +1,10 @@
 import 'package:dio/dio.dart';
+import 'package:untitled/core/constants/api_constants.dart';
 
 class ApiServices {
   //! TODO: Create an API constants class and include this URL in it.
-  final String baseUrl = "https://vcare.integration25.com/api";
+  //??? -----------------DOne.
+ 
   final Dio dio;
   //final String token;
   ApiServices({
@@ -10,7 +12,7 @@ class ApiServices {
     /*required this.token*/
   });
   Future<Map<String, dynamic>> post({required endpoint, required data}) async {
-    var response = await dio.post('$baseUrl$endpoint',
+    var response = await dio.post('${ApiConstants().baseUrl}$endpoint',
         data: data,
         options: Options(headers: {
           // 'Authorization': 'Bearer $token',

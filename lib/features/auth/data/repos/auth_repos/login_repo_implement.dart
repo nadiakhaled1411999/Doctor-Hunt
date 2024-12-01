@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
+import 'package:untitled/core/constants/api_constants.dart';
 import 'package:untitled/core/error/failure.dart';
 import 'package:untitled/features/auth/data/apis/api_services.dart';
 import 'package:untitled/features/auth/data/models/auth_models/login_model.dart';
@@ -14,7 +15,9 @@ class LoginRepoImplement implements LoginRepo {
       {required email, required password}) async {
     try {
       //! TODO: Create an API constants class and add this endpoint to it.
-      var data = await apiServices.post(endpoint: '/auth/login', data: {
+      //?___------------Done.
+      var data =
+          await apiServices.post(endpoint: ApiConstants().endPointLogin, data: {
         'email': email,
         'password': password,
       });

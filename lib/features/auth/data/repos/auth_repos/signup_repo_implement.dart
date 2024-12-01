@@ -1,4 +1,5 @@
 import 'package:dartz/dartz.dart';
+import 'package:untitled/core/constants/api_constants.dart';
 import 'package:untitled/core/error/failure.dart';
 import 'package:untitled/core/routing/route_export_features/export_auth/export_login.dart';
 import 'package:untitled/features/auth/data/models/auth_models/signup_model.dart';
@@ -16,7 +17,7 @@ class SignupRepoImplement implements SignUpRepo {
       required password,
       required passwordConfirmation}) async {
     try {
-      var data = await apiServices.post(endpoint: '/auth/register', data: {
+      var data = await apiServices.post(endpoint: ApiConstants().endPointSignup, data: {
         'name': name,
         'email': email,
         'phone': phone,
