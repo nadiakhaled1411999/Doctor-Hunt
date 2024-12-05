@@ -12,7 +12,7 @@ class ApiServices {
     /*required this.token*/
   });
   Future<Map<String, dynamic>> post({required endpoint, required data}) async {
-    var response = await dio.post('${ApiConstants().baseUrl}$endpoint',
+    var response = await dio.post('${ApiConstants.baseUrl}$endpoint',
         data: data,
         options: Options(headers: {
           // 'Authorization': 'Bearer $token',

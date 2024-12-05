@@ -17,7 +17,7 @@ class LoginRepoImplement implements LoginRepo {
       //! TODO: Create an API constants class and add this endpoint to it.
       //?___------------Done.
       var data =
-          await apiServices.post(endpoint: ApiConstants().endPointLogin, data: {
+          await apiServices.post(endpoint: ApiConstants.endPointLogin, data: {
         'email': email,
         'password': password,
       });
