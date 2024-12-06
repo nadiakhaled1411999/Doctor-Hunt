@@ -43,7 +43,7 @@ class SignUpBody extends StatelessWidget{
                       verticalSpace(40),
                       BuildSocialButtons(),
                       verticalSpace(40),
-                      SignupTextFormFiled(),
+                      SignupTextFormField(),
                       BuildAgreeTermsText(),
                       verticalSpace(40),
                       SignupButton(),
