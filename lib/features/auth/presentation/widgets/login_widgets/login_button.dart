@@ -1,3 +1,5 @@
+ 
+
 import 'package:untitled/core/routing/route_export_features/export_auth/export_login.dart';
 
 class LoginButton extends StatelessWidget {
@@ -5,19 +7,23 @@ class LoginButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var c = context.read<LoginCubit>();
-    return c.isLoading == false
-        ? AppTextButton(
-            buttonText: AppStrings.loginText,
-            textStyle: AppStyles.getMediumStyle(),
-            buttonWidth: 290,
-            buttonHeight: 54,
-            onPressed: () {
-              c.loginValidate();
-            },
-          )
-        : const CircularProgressIndicator(
+    return BlocBuilder<LoginCubit, LoginState>(
+      builder: (context, state) {
+        if (state is LoginLoading) {
+          return const CircularProgressIndicator(
             color: AppColors.primaryColor,
           );
+        }
+        return AppTextButton(
+          buttonText: AppStrings.loginText,
+          textStyle: AppStyles.getMediumStyle(),
+          buttonWidth: 290,
+          buttonHeight: 54,
+          onPressed: () {
+            context.read<LoginCubit>().loginValidate();
+          },
+        );
+      },
+    );
   }
 }

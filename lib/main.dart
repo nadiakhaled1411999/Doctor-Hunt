@@ -9,6 +9,7 @@ import 'package:untitled/doctor_hunt_app.dart';
 void main()async {
   WidgetsFlutterBinding.ensureInitialized();
   await ScreenUtil.ensureScreenSize();
+  
   runApp(const DoctorHuntApp());
 }
 
