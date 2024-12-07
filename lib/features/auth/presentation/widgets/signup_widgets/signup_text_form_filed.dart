@@ -1,18 +1,12 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import 'package:untitled/core/routing/route_export_features/export_auth/export_signup.dart';
 import 'package:untitled/features/auth/logic/auth_cubit/signup_cubit/cubit/signup_cubit_cubit.dart';
 
-class SignupTextFormField extends StatefulWidget {
-  const SignupTextFormField({super.key});
+class SignupTextFormField extends StatelessWidget {
+  SignupTextFormField({super.key});
 
-  @override
-  State<SignupTextFormField> createState() => _SignupTextFormFieldState();
-}
-
-class _SignupTextFormFieldState extends State<SignupTextFormField> {
-  bool isPasswordVisible = false;
-  bool isPasswordConfirmationVisible = false;
+  final ValueNotifier<bool> isPasswordVisible = ValueNotifier<bool>(false);
+  final ValueNotifier<bool> isPasswordConfirmationVisible = ValueNotifier<bool>(false);
 
   @override
   Widget build(BuildContext context) {
@@ -85,57 +79,60 @@ class _SignupTextFormFieldState extends State<SignupTextFormField> {
             verticalSpace(20),
             SizedBox(
               width: 400.w,
-              child: AppTextFormField(
-                hintText: AppStrings.passwordHint,
-                radius: 12,
-                controller: c.passwordController,
-                isObscureText: !isPasswordVisible,
-                validator: (value) {
-                  if (value!.isEmpty) {
-                    return AppStrings.passwordValidationMessage;
-                  }
-                  return null;
+              child: ValueListenableBuilder<bool>(
+                valueListenable: isPasswordVisible,
+                builder: (context, isVisible, child) {
+                  return AppTextFormField(
+                    hintText: AppStrings.passwordHint,
+                    radius: 12,
+                    controller: c.passwordController,
+                    isObscureText: !isVisible,
+                    validator: (value) {
+                      if (value!.isEmpty) {
+                        return AppStrings.passwordValidationMessage;
+                      }
+                      return null;
+                    },
+                    suffixIcon: IconButton(
+                      icon: Icon(
+                        isVisible ? Icons.visibility : Icons.visibility_off,
+                      ),
+                      onPressed: () {
+                        isPasswordVisible.value = !isPasswordVisible.value;
+                      },
+                    ),
+                  );
                 },
-                suffixIcon: IconButton(
-                  icon: Icon(
-                    isPasswordVisible ? Icons.visibility : Icons.visibility_off,
-                  ),
-                  onPressed: () {
-                    setState(() {
-                      isPasswordVisible = !isPasswordVisible;
-                    });
-                  },
-                ),
               ),
             ),
             verticalSpace(20),
             SizedBox(
               width: 400.w,
-              child: AppTextFormField(
-                hintText: AppStrings.passwordConfirmationHint,
-                radius: 12,
-                controller: c.passwordConfirmation,
-                isObscureText:
-                    !isPasswordConfirmationVisible, 
-                validator: (value) {
-                  if (value!.isEmpty) {
-                    return AppStrings.passwordConfirmationValidation;
-                  }
-                  return null;
+              child: ValueListenableBuilder<bool>(
+                valueListenable: isPasswordConfirmationVisible,
+                builder: (context, isVisible, child) {
+                  return AppTextFormField(
+                    hintText: AppStrings.passwordConfirmationHint,
+                    radius: 12,
+                    controller: c.passwordConfirmation,
+                    isObscureText: !isVisible,
+                    validator: (value) {
+                      if (value!.isEmpty) {
+                        return AppStrings.passwordConfirmationValidation;
+                      }
+                      return null;
+                    },
+                    suffixIcon: IconButton(
+                      icon: Icon(
+                        isVisible ? Icons.visibility : Icons.visibility_off,
+                      ),
+                      onPressed: () {
+                        isPasswordConfirmationVisible.value =
+                            !isPasswordConfirmationVisible.value;
+                      },
+                    ),
+                  );
                 },
-                suffixIcon: IconButton(
-                  icon: Icon(
-                    isPasswordConfirmationVisible
-                        ? Icons.visibility
-                        : Icons.visibility_off,
-                  ),
-                  onPressed: () {
-                    setState(() {
-                      isPasswordConfirmationVisible =
-                          !isPasswordConfirmationVisible;
-                    });
-                  },
-                ),
               ),
             ),
           ],
