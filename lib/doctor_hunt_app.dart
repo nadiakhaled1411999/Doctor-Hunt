@@ -3,6 +3,7 @@
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:untitled/core/constants/app_strings.dart';
+import 'package:untitled/core/helpers/shared_preferences/auth_checker_token.dart';
 
 
 
@@ -29,7 +30,7 @@ class DoctorHuntApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title:  AppStrings.appName,
 
-          home:OnboardingPage(),
+          home:AuthChecker(),
           onGenerateRoute: router.generateRoute,
 
 
