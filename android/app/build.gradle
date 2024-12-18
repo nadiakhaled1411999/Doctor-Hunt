@@ -2,7 +2,7 @@
 plugins {
     id "com.android.application"
     id "kotlin-android"
-    // Flutter Gradle Plugin يجب أن يضاف بعد Android و Kotlin Gradle plugins
+    
     id "dev.flutter.flutter-gradle-plugin"
 }
 
@@ -21,14 +21,14 @@ android {
     }
 
     buildFeatures {
-        buildConfig true // تفعيل BuildConfig لحل مشكلة "custom BuildConfig fields"
+        buildConfig true //!حل مشكلة  
     }
 
     defaultConfig {
-        // معرف التطبيق الخاص بك (Application ID)
+         
         applicationId = "com.example.untitled"
 
-        // الإصدارات الدنيا والمستهدفة من Android
+       
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
@@ -37,17 +37,19 @@ android {
 
     buildTypes {
         release {
-            // ملف توقيع APK - استخدم توقيع Debug مؤقتًا (غير مناسب للنشر على Google Play)
+            
             signingConfig signingConfigs.debug
 
-            // تعطيل ميزة Tree Shake Icons لتجنب مشكلات Build
+            //!     Tree Shake Icons لحل مشكلة
             buildConfigField "boolean", "TREE_SHAKE_ICONS", "false"
 
-            // تقليل حجم التطبيق بإزالة الكود غير الضروري
+            //! تقليل حجم التطبيق بإزالة الكود غير الضروري
+            //!لما خلتهم  غير مفعلين اتحلت المشكله واتعمل apkولكن ده كان حل مؤقت
+            //!الحل السليم هو عمل ملف proguard_rules.pro
             minifyEnabled true
             shrinkResources true
 
-            // إعداد ملف Proguard - مهم لتصغير الكود
+         //!Proguard - مهم جدا عمل الملف ده لتصغير الكود
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -56,13 +58,13 @@ android {
 flutter {
     source = "../.."
 }
-
+//!من ضمن الحل
 dependencies {
     implementation "com.google.errorprone:error_prone_annotations:2.18.0"
     implementation "javax.annotation:javax.annotation-api:1.3.2"
 
 }
-
+//!من ضمن الحل
 allprojects {
     repositories {
         google()
