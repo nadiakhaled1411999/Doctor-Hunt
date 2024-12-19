@@ -78,8 +78,8 @@ class AppTextFormField extends StatelessWidget {
             // contentPadding: Uses the provided contentPadding or defaults to
             // horizontal and vertical padding values.
             EdgeInsets.symmetric(
-              horizontal: 23.0.w,
-              vertical: 16.0.h,
+              horizontal: 16.0.w,
+              vertical: 23.0.h,
             ),
         focusedBorder: focusedBorder ??
             // focusedBorder: Uses the provided focusedBorder or defaults to an
@@ -104,7 +104,7 @@ class AppTextFormField extends StatelessWidget {
             width: 1.w,
           ),
         ),
-        hintStyle: hintStyle ??  AppStyles.getRegularStyle(fontSize: 13,fontWeight: FontWeight.w500),
+        hintStyle: hintStyle ??  AppStyles.getRegularStyle(fontSize: 14,fontWeight: FontWeight.w500),
         // hintStyle: Uses the provided hintStyle or defaults to a predefined text style.
         hintText: hintText,
         // hintText: Displays the provided hint text.
@@ -144,7 +144,7 @@ class AppTextFormField extends StatelessWidget {
       // cursorColor: Sets the color of the cursor to the primary blue color.
       obscureText: isObscureText ?? false,
       // obscureText: Uses the provided isObscureText value or defaults to false.
-      style: inputStyle ?? AppStyles.getRegularStyle(fontSize: 13,fontWeight: FontWeight.w500),
+      style: inputStyle ?? AppStyles.getRegularStyle(fontSize: 14,fontWeight: FontWeight.w500),
       // style: Uses the provided inputStyle or defaults to a predefined text style.
     );
   }

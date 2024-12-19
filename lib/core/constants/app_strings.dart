@@ -35,7 +35,7 @@ class AppStrings {
 
   static const String emailValidationMessage = 'Please enter your email';
 
-  static const String passwordHintText = '***********';
+  static const String passwordHintText = '● ● ● ● ● ● ● ●';
    static const String passwordValidationMessage = 'Please enter your password';
 
    

@@ -49,6 +49,7 @@ class LoginTextFormField extends StatelessWidget {
                   hintText: AppStrings.passwordHintText,
                   radius: 12,
                   controller: c.passwordController,
+                  
                   isObscureText: !isVisible,
                   validator: (value) {
                     if (value!.isEmpty) {
