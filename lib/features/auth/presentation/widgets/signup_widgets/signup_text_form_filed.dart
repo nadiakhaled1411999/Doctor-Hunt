@@ -6,7 +6,8 @@ class SignupTextFormField extends StatelessWidget {
   SignupTextFormField({super.key});
 
   final ValueNotifier<bool> isPasswordVisible = ValueNotifier<bool>(false);
-  final ValueNotifier<bool> isPasswordConfirmationVisible = ValueNotifier<bool>(false);
+  final ValueNotifier<bool> isPasswordConfirmationVisible =
+      ValueNotifier<bool>(false);
 
   @override
   Widget build(BuildContext context) {

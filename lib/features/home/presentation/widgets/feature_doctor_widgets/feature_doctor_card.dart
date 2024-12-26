@@ -13,7 +13,7 @@ class FeatureDoctorCard extends StatelessWidget {
       required this.imageFeatureDoctor,
       required this.iconPath,
       required this.rate});
-  @override     
+  @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 170.h,

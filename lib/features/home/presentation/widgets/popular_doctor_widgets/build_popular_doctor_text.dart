@@ -13,10 +13,10 @@ class BuildPopularDoctorText extends StatelessWidget {
           Text(
             AppStrings.popularDoctorText,
             style: AppStyles.getMediumStyle(
-                color: AppColors.black,),
+              color: AppColors.black,
+            ),
           ),
-          Text(AppStrings.seeAllText,
-              style: AppStyles.getCustomStyle()),
+          Text(AppStrings.seeAllText, style: AppStyles.getCustomStyle()),
         ],
       ),
     );

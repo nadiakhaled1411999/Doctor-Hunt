@@ -1,4 +1,4 @@
- import 'package:untitled/core/routing/route_export_features/export_auth/export_login.dart';
+import 'package:untitled/core/routing/route_export_features/export_auth/export_login.dart';
 
 class LoginTextFormField extends StatelessWidget {
   LoginTextFormField({super.key});
@@ -49,7 +49,6 @@ class LoginTextFormField extends StatelessWidget {
                   hintText: AppStrings.passwordHintText,
                   radius: 12,
                   controller: c.passwordController,
-                  
                   isObscureText: !isVisible,
                   validator: (value) {
                     if (value!.isEmpty) {

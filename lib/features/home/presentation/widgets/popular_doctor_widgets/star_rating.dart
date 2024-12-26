@@ -6,15 +6,15 @@ class StarRating extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return   Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: List.generate(5, (index) {
-                    return CustomSVGImage(asset: 
-                      index < rating ? AppAssets.starAmber : AppAssets.star,
-                      width: 12.w,
-                      height: 12.h,
-                    );
-                  }),
-                );
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: List.generate(5, (index) {
+        return CustomSVGImage(
+          asset: index < rating ? AppAssets.starAmber : AppAssets.star,
+          width: 12.w,
+          height: 12.h,
+        );
+      }),
+    );
   }
 }

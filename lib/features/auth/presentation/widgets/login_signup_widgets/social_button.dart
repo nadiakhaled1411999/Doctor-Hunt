@@ -1,8 +1,5 @@
- 
- import 'package:untitled/core/routing/route_export_features/export_auth/export_login.dart';
+import 'package:untitled/core/routing/route_export_features/export_auth/export_login.dart';
 
- 
- 
 class SocialButton extends StatelessWidget {
   final String textName;
   final String iconPath;
@@ -32,17 +29,15 @@ class SocialButton extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-               CustomSVGImage(
-            asset:iconPath ,
-            width:20.w,
-            height: 20.h,
-            
-            
-          ),
+            CustomSVGImage(
+              asset: iconPath,
+              width: 20.w,
+              height: 20.h,
+            ),
             horizontalSpace(7),
             Text(
               textName,
-              style:AppStyles.getRegularStyle(),
+              style: AppStyles.getRegularStyle(),
             ),
           ],
         ),

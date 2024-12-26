@@ -5,9 +5,9 @@ class SignupTitleText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return    Text(
-                     AppStrings.titleSignUp  ,
-                        style: AppStyles.getBoldStyle(),
-                      );
+    return Text(
+      AppStrings.titleSignUp,
+      style: AppStyles.getBoldStyle(),
+    );
   }
 }

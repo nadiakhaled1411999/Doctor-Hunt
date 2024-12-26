@@ -17,7 +17,8 @@ class SignupRepoImplement implements SignUpRepo {
       required password,
       required passwordConfirmation}) async {
     try {
-      var data = await apiServices.post(endpoint: ApiConstants.endPointSignup, data: {
+      var data =
+          await apiServices.post(endpoint: ApiConstants.endPointSignup, data: {
         'name': name,
         'email': email,
         'phone': phone,
