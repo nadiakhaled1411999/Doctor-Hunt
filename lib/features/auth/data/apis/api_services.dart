@@ -2,7 +2,6 @@ import 'package:dio/dio.dart';
 import 'package:untitled/core/constants/api_constants.dart';
 
 class ApiServices {
-   
   final Dio dio;
   //final String token;
   ApiServices({

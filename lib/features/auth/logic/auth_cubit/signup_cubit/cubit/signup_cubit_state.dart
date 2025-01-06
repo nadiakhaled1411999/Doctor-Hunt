@@ -1,6 +1,5 @@
 part of 'signup_cubit_cubit.dart';
 
-
 @immutable
 abstract class SignupState {}
 

@@ -14,7 +14,6 @@ class LoginRepoImplement implements LoginRepo {
   Future<Either<Failure, LoginModel>> loginUser(
       {required email, required password}) async {
     try {
-      
       var data =
           await apiServices.post(endpoint: ApiConstants.endPointLogin, data: {
         'email': email,

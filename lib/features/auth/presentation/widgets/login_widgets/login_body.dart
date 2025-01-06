@@ -8,11 +8,9 @@ class LoginBody extends StatelessWidget {
     return BlocConsumer<LoginCubit, LoginState>(
       listener: (context, state) {
         if (state is LoginSuccess) {
-          
           EasyLoading.dismiss();
           EasyLoading.showSuccess("Login Success");
-          
-          
+
           Navigator.pushNamed(context, Routes.homeScreen);
         } else if (state is LoginLoading) {
           EasyLoading.show(status: "Loading...");

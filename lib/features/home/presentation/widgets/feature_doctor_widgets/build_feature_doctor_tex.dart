@@ -13,10 +13,7 @@ class BuildFeatureDoctorTex extends StatelessWidget {
           Text(AppStrings.featureDoctorText,
               style:
                   AppStyles.getBoldStyle(color: AppColors.black, fontSize: 18)),
-          Text(AppStrings.seeAllText,
-              style: AppStyles.getCustomStyle()
-                 
-                  ),
+          Text(AppStrings.seeAllText, style: AppStyles.getCustomStyle()),
         ],
       ),
     );

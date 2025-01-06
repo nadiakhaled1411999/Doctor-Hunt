@@ -21,7 +21,6 @@ class BuildListIconCard extends StatelessWidget {
                 colorCard: iconData[index]['colorCard'],
                 icon: iconData[index]['icon'],
               );
-            
             })),
       ),
     );

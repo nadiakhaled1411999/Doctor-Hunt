@@ -8,7 +8,7 @@ class HomeBackGround extends StatelessWidget {
     return Positioned.fill(
         child: Image.asset(
       AppAssets.background1,
-      
+
       //Done
       fit: BoxFit.cover,
     ));

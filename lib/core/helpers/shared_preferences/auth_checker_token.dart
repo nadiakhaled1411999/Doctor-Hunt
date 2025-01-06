@@ -12,12 +12,9 @@ class AuthChecker extends StatelessWidget {
     return FutureBuilder<String?>(
       future: SecureStorageHelper.getToken(),
       builder: (context, snapshot) {
-        
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const Center(child: CircularProgressIndicator());
         }
-
-       
         if (snapshot.hasData && snapshot.data != null) {
           return const HomeScreen();
         } else {

@@ -1,4 +1,4 @@
- import 'package:logger/logger.dart';
+import 'package:logger/logger.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled/core/helpers/shared_preferences/secure_storage_helper.dart';
@@ -20,7 +20,7 @@ class SignupCubit extends Cubit<SignupState> {
   SignupCubit(this.signUpRepo) : super(SignupInitial());
 
   Future<void> signupUser() async {
-    emit(SignupLoading());  
+    emit(SignupLoading());
 
     var result = await signUpRepo.signupUser(
       name: nameController.text,

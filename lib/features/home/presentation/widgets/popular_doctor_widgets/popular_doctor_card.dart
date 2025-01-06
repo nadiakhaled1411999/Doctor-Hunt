@@ -1,6 +1,3 @@
-
-
-
 import '../../../../../core/routing/route_export_features/export_home_screen/export_home_screen.dart';
 
 class PopularDoctorCard extends StatelessWidget {
@@ -45,8 +42,9 @@ class PopularDoctorCard extends StatelessWidget {
                         color: AppColors.black, fontSize: 16)),
                 Text(specialty,
                     style: AppStyles.getCustomStyle(
-                        fontSize: 11, )),
-              StarRating(rating: rating),
+                      fontSize: 11,
+                    )),
+                StarRating(rating: rating),
               ],
             ),
           )
