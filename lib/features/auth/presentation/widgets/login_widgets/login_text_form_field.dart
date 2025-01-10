@@ -1,3 +1,4 @@
+import 'package:untitled/core/DI/dependency_injection.dart';
 import 'package:untitled/core/routing/route_export_features/export_auth/export_login.dart';
 
 class LoginTextFormField extends StatelessWidget {
@@ -6,15 +7,16 @@ class LoginTextFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //! TODO: Use more meaningful variable name instead of C and use service locator for init cubit
-    var c = context.read<LoginCubit>();
+  
+    var loginCubit = getIt<LoginCubit>();
+
     return Form(
-      key: c.loginKey,
+      key: loginCubit.loginKey,
       child: Column(
         children: [
-          _buildEmailField(c, context),
+          _buildEmailField(loginCubit, context),
           verticalSpace(20),
-          _buildPasswordField(c, context),
+          _buildPasswordField(loginCubit, context),
         ],
       ),
     );

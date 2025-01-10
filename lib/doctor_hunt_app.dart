@@ -22,10 +22,11 @@ class DoctorHuntApp extends StatelessWidget {
           builder: EasyLoading.init(),
           debugShowCheckedModeBanner: false,
           title: AppStrings.appName,
-          home: AuthChecker(),
+          home: OnboardingPage(),
           onGenerateRoute: router.generateRoute,
         );
       },
     );
   }
 }
+ 

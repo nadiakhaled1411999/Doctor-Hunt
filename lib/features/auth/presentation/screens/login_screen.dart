@@ -1,3 +1,4 @@
+import 'package:untitled/core/DI/dependency_injection.dart';
 import 'package:untitled/core/routing/route_export_features/export_auth/export_login.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -6,9 +7,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-        create: (context) => LoginCubit(
-          //! TODO: Use DependencyInjection (get it package)
-            LoginRepoImplement(apiServices: ApiServices(dio: Dio()))),
+        create: (context) => getIt<LoginCubit>(),
         child: Scaffold(
           body: LoginBody(),
         ));

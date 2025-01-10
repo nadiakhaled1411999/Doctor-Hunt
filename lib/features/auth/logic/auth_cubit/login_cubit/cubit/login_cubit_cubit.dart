@@ -11,8 +11,8 @@ class LoginCubit extends Cubit<LoginState> {
   final TextEditingController passwordController = TextEditingController();
   GlobalKey<FormState> loginKey = GlobalKey();
   var logger = Logger();
+    LoginCubit(this.loginRepo) : super(LoginInitial());
 
-  LoginCubit(this.loginRepo) : super(LoginInitial());
 
   Future<void> loginUser() async {
     emit(LoginLoading());

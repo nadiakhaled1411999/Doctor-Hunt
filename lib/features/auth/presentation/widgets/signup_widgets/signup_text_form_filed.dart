@@ -1,4 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:untitled/core/DI/dependency_injection.dart';
 import 'package:untitled/core/routing/route_export_features/export_auth/export_signup.dart';
 import 'package:untitled/features/auth/logic/auth_cubit/signup_cubit/cubit/signup_cubit_cubit.dart';
 
@@ -11,11 +12,11 @@ class SignupTextFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var c = context.read<SignupCubit>();
+    var signupCubit = getIt<SignupCubit>();
 
     return SingleChildScrollView(
       child: Form(
-        key: c.signupKey,
+        key: signupCubit.signupKey,
         child: Column(
           children: [
             SizedBox(
@@ -23,7 +24,7 @@ class SignupTextFormField extends StatelessWidget {
               child: AppTextFormField(
                 hintText: AppStrings.nameHintText,
                 radius: 10,
-                controller: c.nameController,
+                controller: signupCubit.nameController,
                 validator: (value) {
                   if (value!.isEmpty) {
                     return AppStrings.nameValidationMessage;
@@ -38,7 +39,7 @@ class SignupTextFormField extends StatelessWidget {
               child: AppTextFormField(
                 hintText: AppStrings.emailHint,
                 radius: 5,
-                controller: c.emailController,
+                controller: signupCubit.emailController,
                 validator: (value) {
                   if (value!.isEmpty) {
                     return AppStrings.emailValidationMessage;
@@ -53,7 +54,7 @@ class SignupTextFormField extends StatelessWidget {
               child: AppTextFormField(
                 hintText: AppStrings.phoneHint,
                 radius: 10,
-                controller: c.phoneController,
+                controller: signupCubit.phoneController,
                 validator: (value) {
                   if (value!.isEmpty) {
                     return AppStrings.phoneValidationMessage;
@@ -68,7 +69,7 @@ class SignupTextFormField extends StatelessWidget {
               child: AppTextFormField(
                 hintText: AppStrings.genderHint,
                 radius: 10,
-                controller: c.genderController,
+                controller: signupCubit.genderController,
                 validator: (value) {
                   if (value!.isEmpty) {
                     return AppStrings.genderValidationMessage;
@@ -86,7 +87,7 @@ class SignupTextFormField extends StatelessWidget {
                   return AppTextFormField(
                     hintText: AppStrings.passwordHint,
                     radius: 12,
-                    controller: c.passwordController,
+                    controller: signupCubit.passwordController,
                     isObscureText: !isVisible,
                     validator: (value) {
                       if (value!.isEmpty) {
@@ -115,7 +116,7 @@ class SignupTextFormField extends StatelessWidget {
                   return AppTextFormField(
                     hintText: AppStrings.passwordConfirmationHint,
                     radius: 12,
-                    controller: c.passwordConfirmation,
+                    controller: signupCubit.passwordConfirmation,
                     isObscureText: !isVisible,
                     validator: (value) {
                       if (value!.isEmpty) {
