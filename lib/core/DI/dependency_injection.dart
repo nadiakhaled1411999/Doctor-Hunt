@@ -5,7 +5,7 @@ import 'package:untitled/features/auth/logic/auth_cubit/login_cubit/cubit/login_
 import 'package:untitled/features/auth/logic/auth_cubit/signup_cubit/cubit/signup_cubit_cubit.dart';
 import '../../features/auth/data/apis/api_services.dart';
 import '../../features/auth/data/repos/auth_repos/login_repo_implement.dart';
-final getIt = GetIt.instance;
+final GetIt getIt = GetIt.instance;
 Future<void>setupDependencyInjection()async{
   getIt.registerSingleton<ApiServices>(ApiServices(dio: Dio()));
   getIt.registerLazySingleton(()=>LoginRepoImplement (apiServices: getIt<ApiServices>()));
