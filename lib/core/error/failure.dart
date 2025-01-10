@@ -1,6 +1,5 @@
 import 'package:dio/dio.dart';
-
-abstract class Failure {
+ abstract class Failure {
   final String errorMessage;
 
   Failure(this.errorMessage);
@@ -12,26 +11,26 @@ class ServerFailure extends Failure {
   factory ServerFailure.fromDioError(DioException dioError) {
     switch (dioError.type) {
       case DioExceptionType.connectionTimeout:
-        return ServerFailure('Connection Timeout with ApiServer');
+        return ServerFailure('Connection to the server timed out. Please check your internet connection.');
 
       case DioExceptionType.sendTimeout:
-        return ServerFailure('Send Timeout with ApiServer');
+        return ServerFailure('Failed to send data. Please try again.');
 
       case DioExceptionType.receiveTimeout:
-        return ServerFailure('Receive  Timeout with ApiServer');
+        return ServerFailure('Failed to receive data. Please try again.');
 
       case DioExceptionType.badResponse:
         return ServerFailure.fromResponse(
-            dioError.response!.statusCode, dioError.response!.data);
+            dioError.response?.statusCode, dioError.response?.data);
 
       case DioExceptionType.cancel:
-        return ServerFailure('Request to ApiServer was canceled');
+        return ServerFailure('The request was canceled. Please try again.');
 
       case DioExceptionType.unknown:
-        return ServerFailure('No Internet Connection');
+        return ServerFailure('No internet connection. Please check your network.');
 
       default:
-        return ServerFailure('Opps There was an Error, please try again!');
+        return ServerFailure('An unexpected error occurred. Please try again.');
     }
   }
 
@@ -40,13 +39,13 @@ class ServerFailure extends Failure {
         statusCode == 401 ||
         statusCode == 403 ||
         statusCode == 422) {
-      return ServerFailure(response["message"]);
+      return ServerFailure('There was an issue with the data you entered. Please check and try again.');
     } else if (statusCode == 404) {
-      return ServerFailure(response["error"]);
+      return ServerFailure('The requested page or resource was not found.');
     } else if (statusCode == 500) {
-      return ServerFailure('Internal Server error, please try later');
+      return ServerFailure('Internal server error. Please try again later.');
     } else {
-      return ServerFailure('Opps There was an Error, please try again!');
+      return ServerFailure('An unexpected error occurred. Please try again.');
     }
   }
 }
