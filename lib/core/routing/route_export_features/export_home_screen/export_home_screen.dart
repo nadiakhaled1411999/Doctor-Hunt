@@ -7,7 +7,7 @@ export  'package:untitled/core/widgets/custom_svg_image.dart';
 export  '../../../helpers/spacing.dart';
 
 
-export 'package:untitled/features/home/presentation/widgets/feature_doctor_widgets/feature_doctor_card.dart';
+export 'package:untitled/features/home/presentation/widgets/feature_doctor_widgets/feature_card/feature_doctor_card.dart';
 export 'package:untitled/features/home/presentation/widgets/icon_card_list/icon_card.dart';
 export  'package:untitled/features/home/presentation/widgets/popular_doctor_widgets/popular_doctor_card.dart';
 
@@ -28,3 +28,7 @@ export 'package:untitled/core/widgets/circle_avatar_navigation_bar_item.dart';
 export 'package:untitled/features/home/presentation/widgets/feature_doctor_widgets/featured_doctors_data_list.dart';
 export  'package:untitled/features/home/presentation/widgets/popular_doctor_widgets/popular_data_list.dart';
 export  'package:untitled/features/home/presentation/widgets/popular_doctor_widgets/star_rating.dart';
+export 'package:untitled/features/home/presentation/widgets/feature_doctor_widgets/feature_card/feature_doctor_card_avatar.dart';
+export 'package:untitled/features/home/presentation/widgets/feature_doctor_widgets/feature_card/feature_doctor_card_header.dart';
+export 'package:untitled/features/home/presentation/widgets/feature_doctor_widgets/feature_card/feature_doctor_card_name.dart';
+export 'package:untitled/features/home/presentation/widgets/feature_doctor_widgets/feature_card/feature_doctor_card_salary.dart';
