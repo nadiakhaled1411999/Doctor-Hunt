@@ -1,12 +1,9 @@
 import 'package:untitled/core/routing/route_export_features/export_auth/export_login.dart';
-
 class SocialButton extends StatelessWidget {
   final String textName;
   final String iconPath;
-
   const SocialButton(
       {super.key, required this.textName, required this.iconPath});
-
   @override
   Widget build(BuildContext context) {
     return Container(

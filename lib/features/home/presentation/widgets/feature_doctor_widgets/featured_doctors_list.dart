@@ -1,9 +1,6 @@
 import 'package:untitled/core/routing/route_export_features/export_home_screen/export_home_screen.dart';
-import 'package:untitled/features/home/presentation/widgets/feature_doctor_widgets/feature_card/feature_doctor_card.dart';
-
 class FeaturedDoctorsList extends StatelessWidget {
   const FeaturedDoctorsList({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Padding(

@@ -1,11 +1,8 @@
 import '../../../../../core/routing/route_export_features/export_home_screen/export_home_screen.dart';
-
 class IconCard extends StatelessWidget {
   final Color colorCard;
   final String icon;
-
   const IconCard({super.key, required this.colorCard, required this.icon});
-
   @override
   Widget build(BuildContext context) {
     return SizedBox(

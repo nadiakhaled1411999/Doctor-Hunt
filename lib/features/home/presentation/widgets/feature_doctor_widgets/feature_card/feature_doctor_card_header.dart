@@ -1,15 +1,12 @@
 import 'package:untitled/core/routing/route_export_features/export_home_screen/export_home_screen.dart';
-
 class FeatureDoctorCardHeader extends StatelessWidget {
   final String iconPath;
   final String rate;
-
   const FeatureDoctorCardHeader({
     super.key,
     required this.iconPath,
     required this.rate,
   });
-
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -27,7 +24,6 @@ class FeatureDoctorCardHeader extends StatelessWidget {
       ),
     );
   }
-
   Widget _buildRating(String rate) {
     return Row(
       children: [

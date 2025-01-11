@@ -1,9 +1,7 @@
 import '../../../../../core/routing/route_export_features/export_home_screen/export_home_screen.dart';
-
 class StarRating extends StatelessWidget {
   final int rating;
   const StarRating({super.key, required this.rating});
-
   @override
   Widget build(BuildContext context) {
     return Row(

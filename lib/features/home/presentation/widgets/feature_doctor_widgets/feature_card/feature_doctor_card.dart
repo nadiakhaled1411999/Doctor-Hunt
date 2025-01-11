@@ -1,13 +1,10 @@
 import 'package:untitled/core/routing/route_export_features/export_home_screen/export_home_screen.dart';
-
-
 class FeatureDoctorCard extends StatelessWidget {
   final String name;
   final String salary;
   final String imageFeatureDoctor;
   final String iconPath;
   final String rate;
-
   const FeatureDoctorCard({
     super.key,
     required this.name,
@@ -16,12 +13,11 @@ class FeatureDoctorCard extends StatelessWidget {
     required this.iconPath,
     required this.rate,
   });
-
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height * 0.25,
-      width: MediaQuery.of(context).size.width * 0.35,
+       height: 170.h,
+      width: 130.w,
       child: Card(
         color: AppColors.white,
         shape: RoundedRectangleBorder(

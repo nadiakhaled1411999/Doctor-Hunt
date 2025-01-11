@@ -1,5 +1,4 @@
 import '../../../../../core/routing/route_export_features/export_home_screen/export_home_screen.dart';
-
 class PopularDoctorCard extends StatelessWidget {
   final String name;
   final String specialty;
@@ -12,7 +11,6 @@ class PopularDoctorCard extends StatelessWidget {
     required this.imageDoctor,
     this.rating = 4,
   });
-
   @override
   Widget build(BuildContext context) {
     return Card(

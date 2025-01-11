@@ -1,15 +1,13 @@
 export 'package:flutter/material.dart';
 export 'package:flutter_screenutil/flutter_screenutil.dart';
 export 'package:untitled/core/routing/routes.dart';
-export 'package:untitled/features/auth/presentation/widgets/signup_widgets/signup_text_form_filed.dart';
+export 'package:untitled/features/auth/presentation/widgets/signup_widgets/text_form_field_signup/signup_text_form_filed.dart';
 export 'package:untitled/features/auth/presentation/widgets/login_signup_widgets/social_button.dart';
-
 export '../../../../core/constants/app_assets.dart';
 export '../../../../core/helpers/spacing.dart';
 export '../../../../core/theming/app_colors.dart';
 export '../../../../core/theming/styles.dart';
 export '../../../../core/widgets/app_text_button.dart';
-
 export 'package:untitled/core/constants/app_strings.dart';
 export 'package:untitled/features/auth/presentation/widgets/login_signup_widgets/build_social_buttons.dart';
 export 'package:untitled/features/auth/presentation/widgets/signup_widgets/build_agree_terms_text.dart';
@@ -20,3 +18,17 @@ export 'package:untitled/features/auth/presentation/widgets/signup_widgets/signu
 export  'package:untitled/core/widgets/text_form_field.dart';
 export  'package:untitled/features/auth/presentation/widgets/signup_widgets/sign_up_body.dart';
 export  'package:untitled/features/auth/presentation/widgets/signup_widgets/signup_back_ground.dart';
+export 'package:flutter_bloc/flutter_bloc.dart';
+export 'package:untitled/core/DI/dependency_injection.dart';
+export 'package:untitled/features/auth/logic/auth_cubit/signup_cubit/cubit/signup_cubit_cubit.dart';
+export 'package:untitled/features/auth/presentation/widgets/signup_widgets/signup_bloc_consumer.dart';
+export 'package:flutter_easyloading/flutter_easyloading.dart';
+export 'package:untitled/features/auth/presentation/widgets/signup_widgets/sign_up_form.dart';
+export 'package:untitled/features/auth/presentation/widgets/signup_widgets/text_form_field_signup/email_field.dart';
+export 'package:untitled/features/auth/presentation/widgets/signup_widgets/text_form_field_signup/gender_field.dart';
+export 'package:untitled/features/auth/presentation/widgets/signup_widgets/text_form_field_signup/name_field.dart';
+export 'package:untitled/features/auth/presentation/widgets/signup_widgets/text_form_field_signup/password_confirmation_field.dart';
+export 'package:untitled/features/auth/presentation/widgets/signup_widgets/text_form_field_signup/password_field.dart';
+export 'package:untitled/features/auth/presentation/widgets/signup_widgets/text_form_field_signup/phone_field.dart';
+export 'package:untitled/features/auth/presentation/widgets/login_signup_widgets/email_validator.dart';
+export 'package:untitled/features/auth/presentation/widgets/login_signup_widgets/password_validator.dart';

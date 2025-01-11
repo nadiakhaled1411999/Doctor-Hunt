@@ -1,8 +1,6 @@
 import 'package:untitled/core/routing/route_export_features/export_home_screen/export_home_screen.dart';
-
 class BuildFeatureDoctorTex extends StatelessWidget {
   const BuildFeatureDoctorTex({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Padding(
