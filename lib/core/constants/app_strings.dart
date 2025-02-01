@@ -71,6 +71,10 @@ static const String phoneHint= 'phone';
    static const String genderValidationMessage = 'Please enter your gender';
 static const String passwordConfirmationHint= 'password_confirmation';
  static const String  passwordConfirmationValidation= 'Please enter passwordConfirmation';
+ static const String headerText = "Find Doctors";
+ static const String hintTextSearch = "Dentist";
+ static const String findDoctorTextInTextButton = "Book Now"; 
+  static const String nextAvailable= "Next Available";
 
   
 
