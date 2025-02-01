@@ -39,7 +39,20 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
       "${PngAssets.pngAssets}featureDoctor3.png";
   static const String emailIcon = "${PngAssets.pngAssets}emailIcon.png";
   static const String eyeImage = "${PngAssets.pngAssets}eyeImage.png";
-
+ static const String backGroundLiveChatScreen = "${PngAssets.pngAssets}liveChatScreen.png";
+ static const String liveChatDoctor = "${PngAssets.pngAssets}liveChatDoctor.png";
+ static const String liveChatComment1 = "${PngAssets.pngAssets}everhartTween.png"; 
+static const String liveChatComment2 = "${PngAssets.pngAssets}comment2.png"; 
+static const String liveChatComment3 = "${PngAssets.pngAssets}comment3.png"; 
+  static const String findDoctor1 = "${PngAssets.pngAssets}findDoctor1.png"; 
+  
+  
+  
+  
+  
+  
+  
+  
   // Icons SVG
 //   static const String carSolidIcon = "${SvgAssets.svgAssets}car_solid.svg";
   static const String google = "${SvgAssets.svgAssets}Google.svg";
@@ -59,6 +72,8 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
   static const String readingIcon = "${SvgAssets.svgAssets}readingIcon.svg";
   static const String messagesIcon = "${SvgAssets.svgAssets}messagesIcon.svg";
   static const String eyeIcon = "${SvgAssets.svgAssets}eyeIcon.svg";
+    static const String arrowBack = "${SvgAssets.svgAssets}arrowBack.svg";
+
 
 // Video Assets
 //   static const String testOnBoardingVideo =

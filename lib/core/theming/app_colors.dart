@@ -20,4 +20,5 @@ class AppColors {
   static const colorCardIcon4 = Color(0xffff6a63);
   static const amber = Color(0xffF6D060);
   static const iconBarColor = Color(0xff858EA9);
+   static const black2 = Color(0xff222222);
 }
