@@ -20,7 +20,7 @@ class DoctorHuntApp extends StatelessWidget {
           builder: EasyLoading.init(),
           debugShowCheckedModeBanner: false,
           title: AppStrings.appName,
-          home:FindDoctorScreen(),
+          home:const AuthChecker(),
           onGenerateRoute: router.generateRoute,
         );
       },

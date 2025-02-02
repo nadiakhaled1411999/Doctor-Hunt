@@ -1,9 +1,4 @@
 import 'package:untitled/core/routing/route_export_features/find_doctor_export/export_find_doctor_screen.dart';
-import 'package:untitled/features/home/presentation/widgets/find_doctor_screen_widgets/find_doctor_build_circle.dart';
-import 'package:untitled/features/home/presentation/widgets/find_doctor_screen_widgets/find_doctor_card/find_Doctor_Booking_section/find_doctor_booking_section.dart';
-import 'package:untitled/features/home/presentation/widgets/find_doctor_screen_widgets/find_doctor_card/find_doctor_info_section/find_doctor_image.dart';
-import 'package:untitled/features/home/presentation/widgets/find_doctor_screen_widgets/find_doctor_card/find_doctor_info_section/find_doctor_info_section.dart';
-import 'package:untitled/features/home/presentation/widgets/find_doctor_screen_widgets/find_doctor_text_button.dart';
 
 class FindDoctorBuildCard extends StatelessWidget {
   const FindDoctorBuildCard({super.key, required this.doctorModel});
@@ -25,7 +20,6 @@ class FindDoctorBuildCard extends StatelessWidget {
               children: [
                 FindDoctorInfoSection(doctorModel: doctorModel),
                 FindDoctorBookingSection(doctorModel: doctorModel),
-               
               ],
             ),
           ),

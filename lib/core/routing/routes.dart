@@ -4,6 +4,7 @@ class Routes {
    static const String loginScreen = "/LoginScreen";
    static const String signUpScreen = "/SignUpScreen";
    static const String homeScreen= "/HomeScreen";
+   static const String findDoctorScreen= "FindDoctorScreen";
 
 }
 // The provided Dart code snippet defines a class named Routes that contains

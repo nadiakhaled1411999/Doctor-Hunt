@@ -1,20 +1,25 @@
-
+import 'package:untitled/features/home/presentation/screens/find_doctor_screen.dart';
 
 import 'route_export.dart';
+
 class DoctorHuntRouter {
   Route? generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case Routes.onboardingPage:
         return MaterialPageRoute(
-           builder: (context) => const OnboardingPage(),
-         );
+          builder: (context) => const OnboardingPage(),
+        );
       case Routes.loginScreen:
         return MaterialPageRoute(builder: (context) => const LoginScreen());
       case Routes.signUpScreen:
         return MaterialPageRoute(builder: (context) => const SignUpScreen());
       case Routes.homeScreen:
-        return MaterialPageRoute(builder:  (context) => HomeScreen());
- 
+        return MaterialPageRoute(builder: (context) => HomeScreen());
+      case Routes.findDoctorScreen:
+        return MaterialPageRoute(
+          builder: (context) => const FindDoctorScreen(),
+        );
+
       default:
         return null;
       // MaterialPageRoute(
