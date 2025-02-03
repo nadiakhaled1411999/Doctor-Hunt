@@ -23,10 +23,10 @@ export 'package:untitled/features/home/presentation/widgets/find_doctor_screen_w
 export 'package:untitled/features/home/presentation/widgets/find_doctor_screen_widgets/find_doctor_card/find_doctor_info_section/find_doctor_info_section.dart';
 export 'package:untitled/features/home/presentation/widgets/find_doctor_screen_widgets/find_doctor_search_filed/find_doctor_text_form_filed.dart';
 export 'package:untitled/features/home/presentation/widgets/find_doctor_screen_widgets/find_doctor_card/find_doctor_build_card.dart';
-export 'package:untitled/features/home/presentation/widgets/find_doctor_screen_widgets/find_doctor_build_header.dart';
+export 'package:untitled/core/widgets/build_header.dart';
 export 'package:untitled/features/home/presentation/widgets/find_doctor_screen_widgets/find_doctor_list_view_builder/find_doctor_list_view_builder.dart';
 export 'package:untitled/features/home/presentation/widgets/find_doctor_screen_widgets/find_doctor_list_view_builder/find_doctor_model_list.dart';
 export 'package:untitled/features/home/presentation/widgets/find_doctor_screen_widgets/find_doctor_search_filed/find_doctor_search_field.dart';
 export 'package:untitled/features/home/presentation/widgets/find_doctor_screen_widgets/find_doctor_screen_body.dart';
 export 'package:untitled/features/home/presentation/widgets/find_doctor_screen_widgets/find_doctor_content_sized_box.dart';
- 
+export 'package:untitled/core/routing/routes.dart';

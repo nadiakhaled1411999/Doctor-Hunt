@@ -1,4 +1,5 @@
 import 'package:untitled/core/routing/route_export_features/find_doctor_export/export_find_doctor_screen.dart';
+
 class FindDoctorContentSizedBox extends StatelessWidget {
   const FindDoctorContentSizedBox({super.key});
   @override
@@ -10,7 +11,9 @@ class FindDoctorContentSizedBox extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 15.w),
         child: Column(
           children: [
-            FindDoctorBuildHeader(),
+            BuildHeader(
+              headerText: AppStrings.headerText,
+            ),
             verticalSpace(30),
             FindDoctorSearchField(),
             verticalSpace(8),

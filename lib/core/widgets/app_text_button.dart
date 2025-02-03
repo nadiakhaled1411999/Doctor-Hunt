@@ -8,6 +8,10 @@ import '../theming/app_colors.dart';
 class AppTextButton extends StatelessWidget {
   final double? borderRadius;
   // Optional border radius for the button.
+  final Color? borderColor; 
+   // Optional border  color for the button.
+  final double? borderWidth; 
+   // Optional borderWidth for the button.
   final Color? backgroundColor;
   // Optional background color for the button.
   final double? horizontalPadding;
@@ -27,6 +31,8 @@ class AppTextButton extends StatelessWidget {
   const AppTextButton({
     super.key,
     this.borderRadius,
+     this.borderColor,  
+    this.borderWidth, 
     this.backgroundColor,
     this.horizontalPadding,
     this.verticalPadding,
@@ -76,6 +82,14 @@ class AppTextButton extends StatelessWidget {
         // fixedSize: WidgetStateProperty.all(...): Sets the fixed size of the
         //button. If buttonWidth or buttonHeight are not provided, they default
         //to double.maxFinite and 50.h respectively.
+
+
+         side: WidgetStateProperty.all(
+          BorderSide(
+            color: borderColor ?? Colors.transparent,  
+            width: borderWidth ?? 0.w, 
+          ),
+        ),
       ),
       onPressed: onPressed,
       // onPressed: onPressed: Sets the callback function to be executed when

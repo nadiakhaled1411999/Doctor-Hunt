@@ -4,11 +4,18 @@ class FindDoctorScreenBody extends StatelessWidget {
   const FindDoctorScreenBody({super.key});
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        BackGround(),
-        FindDoctorContentSizedBox(),
-      ],
+    return  SizedBox(
+       height: double.infinity,
+      child: Stack(
+        children: [
+          BackGround(),
+          Column(
+            children: [
+               Expanded(child: FindDoctorContentSizedBox()),
+            ],
+          )
+        ],
+      ),
     );
   }
 }

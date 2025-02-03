@@ -1,6 +1,5 @@
 import 'package:untitled/core/routing/route_export_features/export_auth/export_login.dart';
-import 'package:untitled/core/routing/route_export_features/find_doctor_export/export_find_doctor_screen.dart';
-
+ 
 class CustomBackButton extends StatelessWidget {
   const CustomBackButton({super.key});
   @override
@@ -15,7 +14,7 @@ class CustomBackButton extends StatelessWidget {
         child: Center(
           child: IconButton(
               onPressed: () {
-                Navigator.popAndPushNamed(context, Routes.homeScreen);
+                Navigator.pop(context);
               },
               icon: Icon(
                 Icons.arrow_back_ios,

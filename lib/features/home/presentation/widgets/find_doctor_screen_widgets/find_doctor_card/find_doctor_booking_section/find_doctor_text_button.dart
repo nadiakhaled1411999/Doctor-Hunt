@@ -1,4 +1,5 @@
 import 'package:untitled/core/routing/route_export_features/find_doctor_export/export_find_doctor_screen.dart';
+
 class FindDoctorTextButton extends StatelessWidget {
   const FindDoctorTextButton({super.key});
   @override
@@ -10,7 +11,9 @@ class FindDoctorTextButton extends StatelessWidget {
           textStyle: AppStyles.getMediumStyle(),
           buttonWidth: 110.w,
           buttonHeight: 42.h,
-          onPressed: () {}),
+          onPressed: () {
+            Navigator.pushNamed(context, Routes.doctorSelectTimeScreen);
+          }),
     );
   }
 }

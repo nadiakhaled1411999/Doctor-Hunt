@@ -1,4 +1,4 @@
-import 'package:untitled/features/home/presentation/screens/find_doctor_screen.dart';
+ 
 
 import 'route_export.dart';
 
@@ -18,6 +18,10 @@ class DoctorHuntRouter {
       case Routes.findDoctorScreen:
         return MaterialPageRoute(
           builder: (context) => const FindDoctorScreen(),
+        );
+         case Routes.doctorSelectTimeScreen:
+        return MaterialPageRoute(
+          builder: (context) => const DoctorSelectTimeScreen(),
         );
 
       default:
