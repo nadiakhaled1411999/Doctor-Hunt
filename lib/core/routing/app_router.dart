@@ -23,6 +23,10 @@ class DoctorHuntRouter {
         return MaterialPageRoute(
           builder: (context) => const DoctorSelectTimeScreen(),
         );
+        case Routes.timeScreen:
+        return MaterialPageRoute(
+          builder: (context) =>  TimeScreen(),
+        );
 
       default:
         return null;

@@ -24,4 +24,5 @@ class AppColors {
   static const black2 = Color(0xff222222);
   static const transparent = Color(0x1A677294);
   static const borderColor = Color(0x800EBE7F);
+  static const transparent2= Color(0xFF0EBE7F);
 }

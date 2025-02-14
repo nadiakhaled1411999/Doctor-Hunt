@@ -1,5 +1,5 @@
 import 'package:untitled/core/routing/route_export_features/doctor_select_time_screen/export_doctor_select_screen.dart';
- 
+
 class DoctorSelectButtonNextAvailable extends StatelessWidget {
   const DoctorSelectButtonNextAvailable({super.key});
   @override
@@ -10,6 +10,8 @@ class DoctorSelectButtonNextAvailable extends StatelessWidget {
         borderRadius: 8,
         buttonText: AppStrings.selectTimeTextButtonNextAvailability,
         textStyle: AppStyles.getBoldStyle(color: AppColors.white, fontSize: 20),
-        onPressed: () {});
+        onPressed: () {
+          Navigator.pushNamed(context, Routes.timeScreen);
+        });
   }
 }
