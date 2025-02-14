@@ -2,11 +2,11 @@
 class DoctorSelectDateModel {
   final String date;
   final String slotsAvailable;
-  final bool isSelected;
+  
   const DoctorSelectDateModel({
     required this.date,
     required this.slotsAvailable,
-    required this.isSelected,
+    
   });
   
 }

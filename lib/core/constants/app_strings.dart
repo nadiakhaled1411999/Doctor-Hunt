@@ -75,5 +75,9 @@ class AppStrings {
   static const String doctorSelectName = "Dr.Shruti Kedia";
   static const String doctorSelectDentalClinic =
       "Upasana Dental Clinic, salt lake";
-      static const String timeAfternoonText = "Afternoon 7 slots";
+ static const String timeAfternoonText = "Afternoon 7 slots";
+static const String selectTimeText ="Select Time";
+static const String afternoonText ="Afternoon 7 slots";
+static const String eveningText = "Evening 5 slots";
+
 }

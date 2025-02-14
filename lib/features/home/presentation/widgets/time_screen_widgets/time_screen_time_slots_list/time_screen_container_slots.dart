@@ -1,7 +1,4 @@
-import 'package:untitled/core/routing/route_export_features/export_time_screen/export_time_screen.dart';
-import 'package:untitled/core/theming/app_colors.dart';
-import 'package:untitled/core/theming/styles.dart';
-
+import 'package:untitled/core/routing/route_export_features/export_time_screen/route_export_time_screen.dart';
 class TimeScreenContainerSlots extends StatelessWidget {
   TimeScreenContainerSlots({super.key, required this.timeSlotsList, required this.index});
   final List<String> timeSlotsList;

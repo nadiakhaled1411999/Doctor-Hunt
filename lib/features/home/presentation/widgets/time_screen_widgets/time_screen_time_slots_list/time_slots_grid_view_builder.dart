@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:untitled/features/home/presentation/widgets/time_screen_widgets/time_screen_/time_screen_time_slots_list/time_screen_container_slots.dart';
-
+import 'package:untitled/core/routing/route_export_features/export_time_screen/route_export_time_screen.dart';
 class TimeSlotsGridViewBuilder extends StatelessWidget {
   const TimeSlotsGridViewBuilder({super.key, required this.timeSlotsList});
   final List<String> timeSlotsList;
