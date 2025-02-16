@@ -21,4 +21,11 @@ final List<Map<String, String>> doctors = [
     'iconPath': AppAssets.heart,
     'rate': '2.9',
   },
+   {
+    'name': 'Dr.Pediatrician',
+    'salary': '28.00/ hours',
+    'imageFeatureDoctor': AppAssets.featureDoctor4,
+    'iconPath': AppAssets.heartRed,
+    'rate': '2.9',
+  },
 ];

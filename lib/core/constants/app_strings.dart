@@ -75,9 +75,19 @@ class AppStrings {
   static const String doctorSelectName = "Dr.Shruti Kedia";
   static const String doctorSelectDentalClinic =
       "Upasana Dental Clinic, salt lake";
- static const String timeAfternoonText = "Afternoon 7 slots";
-static const String selectTimeText ="Select Time";
-static const String afternoonText ="Afternoon 7 slots";
-static const String eveningText = "Evening 5 slots";
-
+  static const String timeAfternoonText = "Afternoon 7 slots";
+  static const String selectTimeText = "Select Time";
+  static const String afternoonText = "Afternoon 7 slots";
+  static const String eveningText = "Evening 5 slots";
+  static const String doctorDetailsText = "Doctor Details";
+  static const String doctorDetailsNameText = "Dr. Pediatrician";
+  static const String specialistCardiologistText = "Specialist Cardiologist";
+  static const String salaryText = "28.00/hr";
+  static const String servicesText = "Services";
+  static const String number1Text = "1. ";
+  static const String number2Text = "2. ";
+  static const String number3Text = "3. ";
+  static const String services1Text =  "Patient care should be the number one priority.";
+  static const String services2Text = "If you run your practiceyou know how frustrating.";
+  static const String services3Text ="That’s why some of appointment reminder system." ;
 }

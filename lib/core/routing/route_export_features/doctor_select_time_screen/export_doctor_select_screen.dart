@@ -22,7 +22,7 @@ export 'package:untitled/features/home/presentation/widgets/doctor_select_time_s
 export 'package:untitled/core/theming/styles.dart';
 export 'package:untitled/features/home/presentation/widgets/doctor_select_time_screen_widgets/doctor_select_date/doctor_select_column_in_container.dart';
 export 'package:untitled/core/widgets/app_text_button.dart';
-export 'package:untitled/features/home/presentation/widgets/doctor_select_time_screen_widgets/doctor_select_time_build_card/doctor_select_rating_bar_indicator.dart';
+export 'package:untitled/core/widgets/doctor_rating_bar_indicator.dart';
 export 'package:untitled/features/home/presentation/widgets/doctor_select_time_screen_widgets/doctor_select_time_build_card/doctor_select_row_name.dart';
 export 'package:untitled/core/constants/app_assets.dart';
 export 'package:flutter_rating_bar/flutter_rating_bar.dart';

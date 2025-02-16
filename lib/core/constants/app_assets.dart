@@ -37,6 +37,8 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
       "${PngAssets.pngAssets}featureDoctor2.png";
   static const String featureDoctor3 =
       "${PngAssets.pngAssets}featureDoctor3.png";
+      static const String featureDoctor4 =
+      "${PngAssets.pngAssets}featureDoctor4.png";
   static const String emailIcon = "${PngAssets.pngAssets}emailIcon.png";
   static const String eyeImage = "${PngAssets.pngAssets}eyeImage.png";
  static const String backGroundLiveChatScreen = "${PngAssets.pngAssets}liveChatScreen.png";
@@ -48,7 +50,8 @@ static const String liveChatComment3 = "${PngAssets.pngAssets}comment3.png";
    static const String findDoctor2= "${PngAssets.pngAssets}findDoctor2.png"; 
    static const String findDoctor3= "${PngAssets.pngAssets}findDoctor3.png"; 
    static const String selectDoctorImage= "${PngAssets.pngAssets}selectDoctorImage.png"; 
-  
+  static const String doctorDetailsImage= "${PngAssets.pngAssets}doctorDetailsImage.png"; 
+   static const String mapImage= "${PngAssets.pngAssets}map.png"; 
   
   
   

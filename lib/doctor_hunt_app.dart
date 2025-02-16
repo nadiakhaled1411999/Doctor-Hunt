@@ -2,9 +2,7 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:untitled/core/constants/app_strings.dart';
 import 'package:untitled/core/helpers/shared_preferences/auth_checker_token.dart';
-import 'package:untitled/core/routing/route_export.dart';
-import 'package:untitled/features/home/presentation/screens/find_doctor_screen.dart';
- 
+import 'package:untitled/core/routing/route_export.dart'; 
 import 'core/routing/app_router.dart';
 class DoctorHuntApp extends StatelessWidget {
   const DoctorHuntApp({super.key});

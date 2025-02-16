@@ -13,7 +13,7 @@ class DoctorSelectColumnInCard extends StatelessWidget {
         Text(AppStrings.doctorSelectDentalClinic,
             style: AppStyles.getCustomStyle(fontSize: 13)),
         verticalSpace(5),
-        DoctorSelectRatingBarIndicator(),
+        DoctorRatingBarIndicator(),
       ],
     );
   }

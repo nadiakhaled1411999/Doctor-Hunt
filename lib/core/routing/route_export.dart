@@ -7,3 +7,4 @@ export  'package:untitled/features/onboarding/presentation/screens/onboarding.da
 export  'package:untitled/features/home/presentation/screens/find_doctor_screen.dart';
 export  'package:untitled/features/home/presentation/screens/doctor_select_time_screen.dart';
 export 'package:untitled/features/home/presentation/screens/time_screen.dart';
+export 'package:untitled/features/home/presentation/screens/doctor_details_screen.dart';

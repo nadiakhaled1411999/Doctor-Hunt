@@ -3,9 +3,9 @@ class TimeScreenColumnTimeSlots extends StatelessWidget {
   const TimeScreenColumnTimeSlots({super.key});
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: SingleChildScrollView(
-        child: Column(
+    return 
+      
+         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             AfternoonSlotsText(),
@@ -14,8 +14,8 @@ class TimeScreenColumnTimeSlots extends StatelessWidget {
             EveningSlotsText(),
             TimeSlotsGridViewBuilder(timeSlotsList: eveningSlotsList),
           ],
-        ),
-      ),
+        
+      
     );
   }
 }
