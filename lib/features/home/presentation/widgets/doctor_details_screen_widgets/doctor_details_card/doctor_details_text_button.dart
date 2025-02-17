@@ -12,7 +12,7 @@ class  DoctorDetailsTextButton extends StatelessWidget {
           buttonWidth: 130.w,
           buttonHeight: 38.h,
           onPressed: () {
-            Navigator.pushNamed(context, Routes.doctorSelectTimeScreen);
+            Navigator.pushNamed(context, Routes.doctorAppointmentScreen);
           }),
     );
   }

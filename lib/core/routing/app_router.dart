@@ -31,6 +31,11 @@ class DoctorHuntRouter {
         return MaterialPageRoute(
           builder: (context) =>  DoctorDetailsScreen(),
         );
+         case Routes.doctorAppointmentScreen:
+        return MaterialPageRoute(
+          builder: (context) =>  DoctorAppointmentScreen(),
+        );
+
 
       default:
         return null;

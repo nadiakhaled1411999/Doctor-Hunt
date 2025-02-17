@@ -52,6 +52,9 @@ static const String liveChatComment3 = "${PngAssets.pngAssets}comment3.png";
    static const String selectDoctorImage= "${PngAssets.pngAssets}selectDoctorImage.png"; 
   static const String doctorDetailsImage= "${PngAssets.pngAssets}doctorDetailsImage.png"; 
    static const String mapImage= "${PngAssets.pngAssets}map.png"; 
+   static const String mySelfImage= "${PngAssets.pngAssets}mySelfImage.png";
+   static const String myChildImage= "${PngAssets.pngAssets}myChildImage.png";
+
   
   
   

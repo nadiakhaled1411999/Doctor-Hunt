@@ -87,7 +87,17 @@ class AppStrings {
   static const String number1Text = "1. ";
   static const String number2Text = "2. ";
   static const String number3Text = "3. ";
-  static const String services1Text =  "Patient care should be the number one priority.";
-  static const String services2Text = "If you run your practiceyou know how frustrating.";
-  static const String services3Text ="That’s why some of appointment reminder system." ;
+  static const String services1Text =
+      "Patient care should be the number one priority.";
+  static const String services2Text =
+      "If you run your practiceyou know how frustrating.";
+  static const String services3Text =
+      "That’s why some of appointment reminder system.";
+  static const String appointmentText = "Appointment";
+  static const String appointmentForText = "Appointment For";
+  static const String whoIsThisPatientText = "Who is this patient?";
+  static const String patientNameTex = "Patient Name";
+  static const String contactNumberText = "Contact Number";
+  static const String addText = "Add";
+  static const String nextText = "Next";
 }

@@ -26,4 +26,6 @@ class AppColors {
   static const borderColor = Color(0x800EBE7F);
   static const transparent2 = Color(0xFF0EBE7F);
   static const colorWhiteWithOpacity = Color.fromARGB(250, 240, 245, 245);
+  static const transparentLime = Color(0x00809F1F);
+  static const colorAddContainer = Color(0x330EBE7F);
 }

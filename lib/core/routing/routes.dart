@@ -7,6 +7,7 @@ class Routes {
   static const String doctorSelectTimeScreen = "/DoctorSelectTimeScreen";
   static const String timeScreen = "/TimeScreen";
   static const String doctorDetailsScreen = "/DoctorDetailsScreen";
+  static const String doctorAppointmentScreen = "/DoctorAppointmentScreen";
 }
 // The provided Dart code snippet defines a class named Routes that contains
 // static constant string variables such as: onBoardingScreen and loginScreen.
