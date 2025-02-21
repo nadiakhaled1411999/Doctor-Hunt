@@ -2,7 +2,6 @@ import 'package:untitled/core/routing/route_export_features/export_doctor_detail
 import 'package:untitled/features/home/presentation/widgets/doctor_appointment_screen_widgets/build_patient_selection.dart';
 import 'package:untitled/features/home/presentation/widgets/doctor_appointment_screen_widgets/patient_app_text_button.dart';
 import 'package:untitled/features/home/presentation/widgets/doctor_appointment_screen_widgets/patient_form_fields.dart';
-
 class AppointmentScreenColumnBody extends StatelessWidget {
   const AppointmentScreenColumnBody({super.key});
 

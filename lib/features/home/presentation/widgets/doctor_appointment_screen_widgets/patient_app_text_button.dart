@@ -12,7 +12,9 @@ class PatientAppTextButton extends StatelessWidget {
           buttonText: AppStrings.nextText,
           textStyle:
               AppStyles.getBoldStyle(color: AppColors.white, fontSize: 20),
-          onPressed: () {}),
+          onPressed: () {
+            Navigator.pushNamed(context, Routes.doctorAppointmentDateScreen);
+          }),
     );
   }
 }

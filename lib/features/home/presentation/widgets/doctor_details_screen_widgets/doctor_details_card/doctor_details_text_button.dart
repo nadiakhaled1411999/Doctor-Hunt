@@ -4,8 +4,8 @@ class  DoctorDetailsTextButton extends StatelessWidget {
   const  DoctorDetailsTextButton({super.key});
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: AppTextButton(
+    return
+       AppTextButton(
           buttonText: AppStrings.findDoctorTextInTextButton,
           borderRadius: 5.sp,
           textStyle: AppStyles.getMediumStyle(fontSize: 14),
@@ -13,7 +13,7 @@ class  DoctorDetailsTextButton extends StatelessWidget {
           buttonHeight: 38.h,
           onPressed: () {
             Navigator.pushNamed(context, Routes.doctorAppointmentScreen);
-          }),
+          }
     );
   }
 }

@@ -14,7 +14,6 @@ export 'package:untitled/core/widgets/build_header.dart';
 export 'package:untitled/core/widgets/custom_bottom_navigation_bar.dart';
 export 'package:untitled/core/widgets/text_form_field.dart';
 export 'package:untitled/features/home/presentation/widgets/doctor_details_screen_widgets/doctor_details_card/doctor_details_build_card.dart';
-export 'package:untitled/features/home/presentation/widgets/doctor_appointment_screen_widgets/patient_selection_widgets/patient_card.dart';
 export 'package:untitled/features/home/presentation/widgets/doctor_appointment_screen_widgets/patient_selection_widgets/patient_image.dart';
 export 'package:untitled/features/home/presentation/widgets/doctor_appointment_screen_widgets/build_patient_selection.dart';
 export 'package:untitled/features/home/presentation/widgets/doctor_appointment_screen_widgets/patient_app_text_button.dart';

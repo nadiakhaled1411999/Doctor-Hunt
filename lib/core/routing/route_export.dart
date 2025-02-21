@@ -9,3 +9,4 @@ export  'package:untitled/features/home/presentation/screens/doctor_select_time_
 export 'package:untitled/features/home/presentation/screens/time_screen.dart';
 export 'package:untitled/features/home/presentation/screens/doctor_details_screen.dart';
 export 'package:untitled/features/home/presentation/screens/doctor_appointment_screen.dart';
+export  'package:untitled/features/home/presentation/screens/doctor_appointment_date_screen.dart';

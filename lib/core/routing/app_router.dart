@@ -1,4 +1,4 @@
- 
+
 
 import 'route_export.dart';
 
@@ -35,7 +35,10 @@ class DoctorHuntRouter {
         return MaterialPageRoute(
           builder: (context) =>  DoctorAppointmentScreen(),
         );
-
+ case Routes.doctorAppointmentDateScreen:
+        return MaterialPageRoute(
+          builder: (context) =>  DoctorAppointmentDateScreen(),
+        );
 
       default:
         return null;
