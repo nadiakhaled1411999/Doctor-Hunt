@@ -1,11 +1,8 @@
 import 'package:untitled/core/routing/route_export_features/export_doctor_appointment_date_screen/route_doctor_appointment_date_screen.dart';
-
 class AppointmentDateBuildTableCalendar extends StatelessWidget {
   AppointmentDateBuildTableCalendar({super.key});
-
   final ValueNotifier<DateTime> selectedDayNotifier =
       ValueNotifier<DateTime>(DateTime.utc(2021, 2, 17));
-
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder<DateTime>(
@@ -13,6 +10,14 @@ class AppointmentDateBuildTableCalendar extends StatelessWidget {
       builder: (context, selectedDay, child) {
         return Container(
           decoration: BoxDecoration(
+boxShadow: [ BoxShadow(
+        color: Colors.grey.shade300,
+        blurRadius: 25,
+        spreadRadius: 0,
+        offset: Offset(0, 0),
+      ),],
+
+
             color: AppColors.white,
             borderRadius: BorderRadius.circular(10),
           ),
@@ -62,7 +67,7 @@ class AppointmentDateBuildTableCalendar extends StatelessWidget {
               ),
               leftChevronVisible: false,
             ),
-            rowHeight: 35.h,
+            rowHeight: 37.h,
             daysOfWeekStyle: DaysOfWeekStyle(
               dowTextFormatter: (date, locale) {
                 const days = ['Tu', 'We', 'Th', 'Fr', 'Sa', 'Su', 'Mo'];
@@ -119,7 +124,6 @@ class AppointmentDateBuildTableCalendar extends StatelessWidget {
       },
     );
   }
-
   Widget _buildCircleDate(String day) {
     return ClipRRect(
       child: Container(
