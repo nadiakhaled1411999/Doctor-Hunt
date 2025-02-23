@@ -1,5 +1,4 @@
 import 'package:untitled/core/routing/route_export_features/export_doctor_appointment_date_screen/route_doctor_appointment_date_screen.dart';
-import 'package:untitled/features/home/presentation/widgets/doctor_appointment_date_widgets/appointment_date_available_reminder_time/appointment_date_selector_time.dart';
 
 class AppointmentDateListViewBuilder extends StatelessWidget {
   const AppointmentDateListViewBuilder(

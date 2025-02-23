@@ -100,4 +100,15 @@ class AppStrings {
   static const String contactNumberText = "Contact Number";
   static const String addText = "Add";
   static const String nextText = "Next";
+  static const String availableTimeText = "Available Time";
+  static const String reminderMeBeforeText = "Reminder Me Before";
+  static const String confirmText = "Confirm";
+  static const String thankYouText = "Thank You !";
+ static const String doneText = "Done";
+static const String editYourAppointmentText = "Edit your appointment";
+
+  static const String appointmentSuccessfulText = "Your Appointment Successful";
+
+  static const String bookedAnAppointmentText =
+      " You booked an appointment with Dr.\nPediatrician Purpieson on February 21,\nat 02:00 PM";
 }

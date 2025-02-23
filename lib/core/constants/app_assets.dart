@@ -43,25 +43,26 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
   static const String eyeImage = "${PngAssets.pngAssets}eyeImage.png";
  static const String backGroundLiveChatScreen = "${PngAssets.pngAssets}liveChatScreen.png";
  static const String liveChatDoctor = "${PngAssets.pngAssets}liveChatDoctor.png";
- static const String liveChatComment1 = "${PngAssets.pngAssets}everhartTween.png"; 
-static const String liveChatComment2 = "${PngAssets.pngAssets}comment2.png"; 
-static const String liveChatComment3 = "${PngAssets.pngAssets}comment3.png"; 
-  static const String findDoctor1 = "${PngAssets.pngAssets}findDoctor1.png"; 
-   static const String findDoctor2= "${PngAssets.pngAssets}findDoctor2.png"; 
-   static const String findDoctor3= "${PngAssets.pngAssets}findDoctor3.png"; 
-   static const String selectDoctorImage= "${PngAssets.pngAssets}selectDoctorImage.png"; 
-  static const String doctorDetailsImage= "${PngAssets.pngAssets}doctorDetailsImage.png"; 
-   static const String mapImage= "${PngAssets.pngAssets}map.png"; 
+ static const String liveChatComment1 = "${PngAssets.pngAssets}everhartTween.png";
+static const String liveChatComment2 = "${PngAssets.pngAssets}comment2.png";
+static const String liveChatComment3 = "${PngAssets.pngAssets}comment3.png";
+  static const String findDoctor1 = "${PngAssets.pngAssets}findDoctor1.png";
+   static const String findDoctor2= "${PngAssets.pngAssets}findDoctor2.png";
+   static const String findDoctor3= "${PngAssets.pngAssets}findDoctor3.png";
+   static const String selectDoctorImage= "${PngAssets.pngAssets}selectDoctorImage.png";
+  static const String doctorDetailsImage= "${PngAssets.pngAssets}doctorDetailsImage.png";
+   static const String mapImage= "${PngAssets.pngAssets}map.png";
    static const String mySelfImage= "${PngAssets.pngAssets}mySelfImage.png";
    static const String myChildImage= "${PngAssets.pngAssets}myChildImage.png";
 
-  
-  
-  
-  
-  
-  
-  
+   static const String likeImage= "${PngAssets.pngAssets}like.png";
+
+
+
+
+
+
+
   // Icons SVG
 //   static const String carSolidIcon = "${SvgAssets.svgAssets}car_solid.svg";
   static const String google = "${SvgAssets.svgAssets}Google.svg";

@@ -28,4 +28,7 @@ class AppColors {
   static const colorWhiteWithOpacity = Color.fromARGB(250, 240, 245, 245);
   static const transparentLime = Color(0x00809F1F);
   static const colorAddContainer = Color(0x330EBE7F);
+static const colorGrayWithShadow2= Color.fromRGBO(224, 224, 224, 1);
+static const colorCircleLike=  Color(0xffE7F8F2);
 }
+
